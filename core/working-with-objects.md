@@ -3,13 +3,13 @@
 
 ## Overview
 
-In this article we cover the fundamental principles for working with objects in Agile Toolkit. The techniques are straightforward for UI developers (Desktop / Mobile), but might be  unfamiliar to most developers. 
+In this topc we cover the fundamental principles for working with objects in Agile Toolkit. The techniques should be familiar to Desktop or Mobile UI developers, but may be new to web developers.
 
-If you are a web developer and have been using some other web frameworks, open a web page and imagine that instead of HTML elements it consists of web objects. Menu would be one object. All forms could be a special form object. Text is yet another object. Finally all of the page is also an object.
+If your main experience is with other web frameworks, open a web page and imagine that instead of HTML elements it consists of web objects. The top menu would be one object. Each form would be another object, with field objects nested inside. Each block of text is yet another object. And all these objects are nested inside an object for the page itself.
 
 Principle of presenting Web UI through a set of flexible objects is a fundamental concept in Agile Toolkit. There are however invisible objects too. When form is being submitted, it communicates with a Model object. This object tells form which field to add and where to store data. 
 
-This tree of objects in Agile Toolkit is called [Runtime Object Tree](/TODO).
+ [Runtime Object Tree](/TODO).
 
 ## Direct Adding Of Objects
 

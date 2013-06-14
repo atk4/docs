@@ -2,7 +2,7 @@
 
 ## What Challenges Is Agile Toolkit Designed To Solve?
 
-Agile Toolkit is a new kind of PHP framework focused on easing the development of rich-client AJAX applications. 
+Agile Toolkit is a new kind of full-stack PHP framework focused on easing the development of rich-client AJAX applications. 
 
 ### The challenge of developing rich AJAX applications
 
@@ -29,7 +29,7 @@ For more complex requirements your main option is a multi-framework development 
 
 Neither of these solutions met the needs of our busy web development house. So we set out to build a simpler, faster and more reliable approach to developing rich web applications.
 
-Though our experience of over 100 commercial projects, Agile Toolkit has evolved into a mature, production-ready development tool.
+Though our experience of over 100 commercial projects Agile Toolkit has evolved into a mature, production-ready development tool.
 
 ## What Unique Benefits Does Agile Toolkit Deliver?
 
@@ -42,7 +42,7 @@ Agile Toolkit borrows proven principles from GUI frameworks such as Cocoa, QT an
 * The framework provides a consistent, professional look and feel for your application, based on standard UI components such as buttons, menus, forms and fields
 * The look and feel is easy to skin or customize
 * Actual implementation of a UI component (HTML template, JavaScript widgets, events and CSS) is abstracted and knowledge of the underlying nuts and bolts is not necessary to build your application
-* In general everything is done in PHP, from Models and advanced data queries to View layout, logic and event binding
+* In general everything is done in PHP, from Models and advanced data queries to View layout, UI logic and event binding
 * Components are modular and independent &ndash; for example placing multiple CRUD components on the same page or embedding them inside your custom component is simple and intuitive
 * UI logic is cleanly separated from business logic by design
 * And your data structures move seamlessly between your data store and your AJAX interface.
@@ -51,7 +51,7 @@ Agile Toolkit borrows proven principles from GUI frameworks such as Cocoa, QT an
 
 ### How is Agile Toolkit different?
 
-We call our solution a Toolkit rather than a framework because the focus is on rapid development with reusable interface and business components. And we call it Agile because the components are designed to adapt easily and reliably as agile requirements evolve.
+We call our solution a Toolkit rather than a framework because the focus is on rapid development with reusable interface and business components. And we call it Agile because the components are designed to adapt easily and reliably as project requirements evolve.
 
 Compared to conventional PHP MVC frameworks, you'll be working with:
 
@@ -63,7 +63,7 @@ Agile Toolkit offers a comprehensive approach to rich application development, s
 
 ### The payoff
 
-So what is the payoff for you, the developer? Quite simply, AJAX applications that are:
+So what is the payoff for you, the developer? Quite simply, AJAX data applications that are:
 
 * Easier to build
 * Easier to test, and
@@ -81,7 +81,7 @@ That's it &ndash; our page is now displaying an attractive and functional CRUD i
 In Agile Toolkit CRUD is just another component, with many powerful and flexible features built-in &ndash; for example:
 
     $crud->addPaginator(5);
-    $crud->addQuickSearch(array('name'));
+    $crud->addQuickSearch(array('name', 'department'));
 
 Components are easy to extend and customize. CRUD is a composite View relying on Grid, Form and Button Views and we can interact with those subcomponents directly:
 
@@ -162,4 +162,4 @@ This example gives you a foretaste of some of the most powerful features of Agil
 
 We recognise that many developers will be coming to Agile Toolkit with a significant investment in other MVC frameworks, or in content management frameworks such as WordPress, Drupal and Joomla. 
 
-If you want to add sophisticated data handling to your legacy code, Agile Toolkit is designed to play well with these other frameworks. For example you might use the Agile Toolkit UI features for just a couple of pages inside your CodeIgniter project, or you can use the unique features of the Agile Toolkit ORM to build the REST interface for your JavaScript frontend. Commonly, developers will use Agile Toolkit to modernise the backend/admin area of an existing project. You'll find more details [here](/TODO).
+If you want to add sophisticated data handling to your legacy code, Agile Toolkit is designed to play well with these other frameworks. For example you might use the Agile Toolkit UI features for just a couple of pages inside your CodeIgniter project, or you can use the unique features of the Agile Toolkit ORM to build the REST interface for your  JavaScript frontend. Commonly, developers will use Agile Toolkit to modernise the backend/admin area of an existing project. You'll find more details [here](/TODO).

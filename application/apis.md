@@ -11,7 +11,7 @@ The main APIs are:
 * [ApiWeb](/TODO): a minimal frontend for web applications, mainly used for integrating with other frameworks
 * [ApiFrontend](/TODO): a comprehensive API for web applications, extending ApiWeb with routing, an integrated CSS styling system, and Page classes
 
-There are other more specialized APIs for installers and REST requests. In process of developing your own application, you will have to create your own Application class extended from a standard Api class.
+There are other more specialized APIs for installers and REST requests. You create the `app` object for your own application by extending an API class.
 
 ## The Purpose Of The API Classes
 
@@ -21,8 +21,8 @@ Agile Toolkit does not use any static elements or global variables. All objects 
 
 This leads to several interesting points:
 
-- You can have more than one API running at the same time;
-- APIs are independent, and will never share same ID, Cookie name or session name;
+- You can have more than one API running at the same time
+- APIs are independent and will never share same ID, Cookie name or session name
 - You can create one Application from inside another one. The latter will function perfectly yet unaware of the former Application.
 
 ### Controllers versus Singletons
