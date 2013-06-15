@@ -213,7 +213,40 @@ In many applications the most common use of hooks is in Models:
 
 ### Application Hooks
 
-ApiFrontend offers a number of hooks at different spots in the request response:
+These enable you to run code at specific points in the execution flow:
+
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    TODO: List of available hooks, please!
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+* ApiCLI
+  * caught-exception(api,exception) - called when your application
+generates exception. Logger contoller is using this hook to intercept
+and highlight exceptions better.
+  * output-warning, output-debug ($msg) can be used to nicely output
+errors or log them. Also intercepted by Logger.
+  * localizeString($str). Hook can be used to register localization
+mechanism. All the texts of Agile Toolkit (such as labels) will be
+passed through this hook which must return localized version. See also
+internationalization.
+* ApiWeb
+  * pre-init, pre-exec, post-submit, pre-render, post-js-collection,
+pre-render-output and post-render-output - hooks are always executed from the
+main() method. You can divert some element initalization to the hook if
+you want to make sure that everything else is initialized. For example
+if you want to output how many database queries were Performed during
+applicaiton run, you need to output it on 'post-render-output'
+  * cut-output, submitted - thoes hooks are called in certain
+conditions. cut-output is called when only part of the page is being
+redrawn. submitted is called when POST data is received from any form.
+(Form object actually uses this hook to process load post data)
+
+* Auth/Basic
+  * login - hook is called when user logs in 
+    TODO: List of available hooks, please!
+
+[[[[[[[[[[[[[[[[ WORKING HERE ]]]]]]]]]]]]]]]]]
 
     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     TODO: List of available hooks, please!
