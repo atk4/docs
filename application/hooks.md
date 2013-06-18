@@ -2,9 +2,9 @@
 
 ## What Are Hooks?
 
-Hooks are [a well know development pattern](http://en.wikipedia.org/wiki/Hooking) which enables you to register callbacks with an object. 
+Hooking is [a well know development pattern](http://en.wikipedia.org/wiki/Hooking) that enables you to register callbacks with an object. 
 
-This is very similar to the "bind" and "trigger" methods in jQuery. In other frameworks they may be called "actions", "handlers" or "callbacks". 
+This is very similar to the "bind" and "trigger" methods in jQuery. In other frameworks hooks may be called "actions", "handlers" or "callbacks". 
 
 In Agile Toolkit, hooks are implemented in `AbstractObject` so all classes have access to hook functionality.
 
@@ -12,27 +12,31 @@ If you're not familiar with this pattern, here's the basic idea...
 
 First, an object offers a "spot" where you can register callback code. So in `Model_Table`, for example, you'll find:
 
-     function save(){
+    function save()
+    {
         $this->hook('beforeSave');
 
-        ...
+        // ...
 
     }
 
-Then in **your code** you might have:    
+Then in your own code you might have:    
 
     $model->addHook('beforeSave', function($m){
 
         $m['card_mask'] = substr($m['card_num'], -4);
     });
 
-Model's `save()` method will now automatically call your callback method. This technique allows you to add behaviours to the model without overriding methods. You can place hook anywhere in your code even inside Model's `init()` method:
+The Model class's `save()` method will now automatically call your callback method.
+
+You can place hook anywhere in your code, even inside Model's `init()` method:
+
 
     class Model_Customer extends Model_Table {
         
         function init(){
           
-            ...
+            // ...
             
             $this->addHook('beforeSave',function($m){
 
@@ -43,41 +47,42 @@ Model's `save()` method will now automatically call your callback method. This t
 
 You can add more than one hook to the same spot, and by default they run in the order they were registered.
 
-Hooks offer a convenient way to extend an object's functionality at runtime. Many objects in the Toolkit offer hooks, and you can use them to add flexibility to your own objects as well. 
+This technique enables you to add behaviours to a class without overriding methods. 
+Many objects in the Toolkit offer hooks, and you can use this functionality to add flexibility to your own objects as well. 
+
 ## How To Create A Hook Spot
 
-It is also a good idea to introduce hooks in your own software because all objects of Agile Toolkit already have this functionality, you just nee to add a call to `$this->hook()` where you want the callback handlers to run. 
+Adding a hook spot to your class is as simple as calling `$this->hook('hookName')` where you want the callback handlers to run. 
 
-    $this->hook('beforeSave');
-
+    $this->hook('failedTransaction');
 
 ## How To Add Hooks To A Spot
 
-Here are the arguments for `addHook()`;
+You hook your callback code into a hook spot with `addHook()`:
 
     addHook($hook_spot, $callable, $arguments = array(), $priority = 5)
 
-The first argument is the name of the spot you are hooking into, and the second is a callable PHP type that will be called when the hook runs. 
+The first argument is the name of the spot, and the second is a callable PHP type that will be called when the hook runs. 
 
 As we've seen, the typical callable is a closure:
 
     $this->addHook('beforeModify', function($m){
 
-        ...
+        // ...
     });
 
 You can also pass in an array, with the callback handler object as the first value, and the name of the method to be called on the handler as the second value.
 
     function addRequest()
     {
-        ...
+        // ...
 
         $this->addHook('requestComplete', array($this, 'requestComplete'));
     }
 
     function requestComplete($request, $response)
     {
-        ....
+        // ....
     }
 
 Finally, if you pass in an object rather than an array, the hook will call a method on the handler with the same name as the hook spot:
@@ -96,12 +101,13 @@ The object containing the hook spot always passes itself into your callback hand
 
     $my_obj->addHook('beforeModify', function($my_obj){
 
-        ...
+        // ...
     });
 
 The `hook()` method can pass values to the callback handler as an array in its second argument:
 
     $val = 'test-1';
+
     $this->hook('test', array($val, 'test-2'));
 
 The arguments set in the array will be passed to the callback handler in order, starting with the second argument:
@@ -205,57 +211,86 @@ Here are some of the most commonly used hooks, to give you an overview of what's
 
 In many applications the most common use of hooks is in Models:
 
- * beforeLoad($model, $query) - called before loading SQL query is executed. You have a chance to modify that query. This is called for both model->load() and for iterating through model with foreach($model). This hook is great for applying extra options to your SQL query.
- * afterLoad($model) - called after data have been loaded from SQL. You can now access $model->get() and the model will appear to be loaded. Called for both model->load() and iterating. This hook is great for performing data manipulation and normalization.
- * beforeSave($model) - called when $model->save() is called. This is called inside SQL transaction, so database changes you perform here will be rolled back if save would be unsuccessful. This hook is great for performing data modification before it's been saved. You can check $model->loaded() to see if a new record is being stored or updated
- * beforeInsert($model, $query) - called when inserting new data and after the insert query is being formed. That query is passed as 2nd argument. This hook is great for changing insert query options.
- * afterInsert($model,$id) - called after insertion method is performed successfully, but before model is re-loaded. You can break out of this hook and return a substitute model. Great for overriding how model is reloaded after insert.
- * beforeModify($model,$query) - called before update SQL query is executed. This hook is great for changing update query options.
- * afterModify($model) - called after SQL query is executed but before reloading has taken place. Note that if you access set() / get() here it will be reloaded by a subsequental reload.
- * afterSave($model) - called after model have been successfully reloaded. This is the last hook to be executed before SQL transaction is finished with commit. Please note taht beforeLoad / afterLoad will also be called during the reloading of a model. This hook is great for hiding some fields from a model after they are being saved such as wiping your password field.
+ * **beforeLoad($model, $query)** &ndash; called before an SQL SELECT query is executed.  This is called for both `$model->load()` and for iterating through a result set with foreach($model). This hook is handy for applying extra options to your SQL query.
+
+ * **afterLoad($model)** &ndash; called after data has been loaded from SQL. You can now access model data with `$model->get()`. Called for both `model->load()`` and iterating. This hook is great for performing data manipulation and normalization.
+
+ * **beforeSave($model)** &ndash; called when `$model->save()` is called. The hook runs inside an SQL transaction, so database changes you perform here will be rolled back if the save is unsuccessful. This hook is used for performing data modification before it's been saved. 
+
+ * **beforeInsert($model, $query)** &ndash; called after the insert query object has been created, but before it executes. The query is passed as the 2nd argument, and you can change it in your callback handler. 
+
+ * **afterInsert($model,$id)** &ndash; called after an insert succeeds, but before the Model is re-loaded. You can break out of this hook and return a substitute model. Used for overriding how a Model is reloaded after an insert.
+
+ * **beforeModify($model,$query)** &ndash; called before an UPDATE SQL query is executed. This hook is great for changing update query options.
+
+ * **afterModify($model)** &ndash; called after an SQL query is executed but before reloading. Note that if you access set() / get() here the Model will be reloaded.
+
+ * afterSave($model)** &ndash; called after a successful save and reload. This is the last hook to execute before the SQL transaction is committed. Please note that `beforeLoad` and `afterLoad` will also be called during the reloading of a Model. This hook is great for hiding fields from a Model after saving, such as wiping your password field.
+
+The other Model hooks work in a similar way:
+
  * beforeUnload($model)
  * afterUnload($model)
- * beforeDelete($model,$query) - you can access id through $model->id
+ * beforeDelete($model, $query) &ndash you can access the record id through $model->id
  * afterDelete($model)
  * beforeDeleteAll($model)
  * afterDeleteAll($model)
 
-Note: Some of those hooks will not supply $query if used in non-sql models.
+Note: Some of those hooks will not supply $query if used in non-SQL Models.
 
+## Useful Hooks
+
+Here are some of the most commonly used hooks, to give you an overview of what's on offer:
+
+### Model Hooks
+
+In many applications the most common use of hooks is in Models:
+
+ * **beforeLoad($model, $query)** &ndash; called before an SQL SELECT query is executed.  This is called for both       `$model->load()` and for iterating through a result set with foreach($model). This hook is handy for applying extra     options to your SQL query.
+
+ * **afterLoad($model)** &ndash; called after data has been loaded from SQL. You can now access model data with `$model->get()`. Called for both `model->load()`` and iterating. This hook is great for performing data manipulation and        normalization.
+
+ * **beforeSave($model)** &ndash; called when `$model->save()` is called. The hook runs inside an SQL transaction, so   database changes you perform here will be rolled back if the save is unsuccessful. This hook is used for performing     data modification before it's been saved.
+
+ * **beforeInsert($model, $query)** &ndash; called after the insert query object has been created, but before it        executes. The query is passed as the 2nd argument, and you can change it in your callback handler.
+
+ * **afterInsert($model,$id)** &ndash; called after an insert succeeds, but before the Model is re-loaded. You can      break out of this hook and return a substitute model. Used for overriding how a Model is reloaded after an insert.
+
+ * **beforeModify($model,$query)** &ndash; called before an UPDATE SQL query is executed. This hook is great for        changing update query options.
+
+ * **afterModify($model)** &ndash; called after an SQL query is executed but before reloading. Note that if you access  set() / get() here the Model will be reloaded.
+
+ * afterSave($model)** &ndash; called after a successful save and reload. This is the last hook to execute before the   SQL transaction is committed. Please note that `beforeLoad` and `afterLoad` will also be called during the reloading of a Model. This hook is great for hiding fields from a Model after saving, such as wiping your password field.
+
+The other Model hooks work in a similar way:
+
+ * beforeUnload($model)
+ * afterUnload($model)
+ * beforeDelete($model, $query) &ndash you can access the record id through $model->id
+ * afterDelete($model)
+ * beforeDeleteAll($model)
+ * afterDeleteAll($model)
+
+Note: Some of those hooks will not supply $query if used in non-SQL Models.
 
 ### Application Hooks
 
+<!--x Remember to add aliases for the new hook names! x-->
+
 These enable you to run code at specific points in the execution flow:
 
-* ApiCLI
-  * caught-exception(api,exception) - called when your application
-generates exception. Logger contoller is using this hook to intercept
-and highlight exceptions better.
-  * output-warning, output-debug ($msg) can be used to nicely output
-errors or log them. Also intercepted by Logger.
-  * localizeString($str). Hook can be used to register localization
-mechanism. All the texts of Agile Toolkit (such as labels) will be
-passed through this hook which must return localized version. See also
-internationalization.
-* ApiWeb
-  * pre-init, pre-exec, post-submit, pre-render, post-js-collection,
-pre-render-output and post-render-output - hooks are always executed from the
-main() method. You can divert some element initalization to the hook if
-you want to make sure that everything else is initialized. For example
-if you want to output how many database queries were Performed during
-applicaiton run, you need to output it on 'post-render-output'
-  * cut-output, submitted - thoes hooks are called in certain
-conditions. cut-output is called when only part of the page is being
-redrawn. submitted is called when POST data is received from any form.
-(Form object actually uses this hook to process load post data)
+* Commonly used hooks in ApiCLI
 
-* Auth/Basic
-  * login - hook is called when user logs in (first time authentication), can be used to populate some session data from database.
-  * tryLogin - called after setModel, can be used to login using cookie data. You receive $model, $login, and $password parameters and if user is login, respond with user_id.
-  * isPageAllowed - use breakHook(true / false) to override default behaviour of this method. Can be used to punch some public pages through CMS.
-  * check - called when password authentication is checked. Last chance to use breakHook(user_id) to authenticate user and bypass login.
-  * loggedIn - executed after successful authentication
+    * **caughtException(api,exception)** &ndash; called when your application generates an exception. This is used by the Logger Controller.
   
-<!-- TODO romans: clarify difference between login and loggedIn -->
+    * **outputWarning, outputDebug($msg)** can be used for error logging or to format error output. The Logger Controller uses both of these hooks.
   
-  
+    * **localizeString($str)** &ndash; sed to register a localization mechanism. All the texts in Agile Toolkit (such as labels) are passed through this hook, which must return a localized version.
+
+* Commonly used hooks in ApiWeb
+
+    * **preInit, preExec, postSubmit, preRender, postJsCollection, preRenderOutput & postRenderOutput** &ndash; these hooks are always executed at the relevant point in the execution flow. For example if you want to output how many database queries executed during an Application run, you would output it on 'PostRenderOutput'.
+
+    <!--x What would you use cutOutput for?? x-->
+
+    * **cutOutput, submitted** &ndash; these are conditional hooks. `cutOutput` is called when only part of the page is being redrawn. The `submitted` hook is called when POST data is received from any Form. (The Form object actually uses this hook to process POST data).
