@@ -1,10 +1,7 @@
+<!-- romans reviewed 20 June -->
 # Core > Working With Objects
 
-    <!--x 
-        Note: I've removed Element Tracking - doesn't feel 
-        like a beginner topic. Should be covered in an Article, 
-        I would suggest.
-    x-->
+
 
 ## Overview
 
@@ -18,7 +15,7 @@ If you're not familiar with desktop or mobile development, open a web page and i
 
 The principle of presenting the Web UI through a nested set of flexible objects is a fundamental concept in Agile Toolkit. 
 
-But the Toolkit is a full stack framework so there are invisible objects too. For example, when a Form object is submitted, it communicates via Ajax with a Model object nested inside it. When you add a Model object, your form knows which fields to display and how to store the data.
+Apart from visible objects (Views) there are also Models and Controllers. When a Form object is submitted, it relies on several other objects such as Model or AJAX Controller. The Model further consists of Fields, Query object etc.
 
 ## Direct Adding Of Objects
 
@@ -36,11 +33,9 @@ This code:
 
 (Actually, there are more things happening here which we cover below.)
 
-Your newly created object is now extending the functionality of the parent object that owns it through our Composability principle.
+Visible objects (Views) contribute to the HTML output of the parent object - in other words - when you add Form into a page, HTML of Page will now also contain HTML of Form. We can continue to fine-tune the behaviour and display of the form by working with the `$form_object` we created - adding fields or changing template.
 
-So now our Page knows that it's displaying a form, and we can fine-tune the behaviour and display of the form by working with the `$form_object` we created.
-
-Many objects are designed to reside within parent objects of a certain type. So if you add an obviously incompable object, such as a Grid paginator to a database Model, expect to see errors.
+Many objects are designed to reside within parent objects of a certain type. So if you add an obviously incompatible object, such as a Form_Field into a Model, expect to see errors.
 
 ## Indirect Adding Of Objects 
 
@@ -64,10 +59,11 @@ Some shorthand methods also allow you to omit part of the class prefix:
 
 ## Adding Existing Objects
 
-If an object has already been added, you can move it into a new parent by passing it as the ﬁrst argument of an `add()` call:
+If an object has already been added, you can move it into a new parent by passing it as the first argument of an `add()` call:
 
     $form = $page->add('Form');
-    $field = $form->addField('line','name');
+    $f_name = $form->addField('line','name');
+    $f_surname = $form->addField('line','surname');
 
     // Add a 2 column grid to the form
 
@@ -76,9 +72,10 @@ If an object has already been added, you can move it into a new parent by passin
     $right=$columns->addColumn(6);
 
     // Moves $field inside a column
-    $right->add($field); 
+    $left->add($f_name); 
+    $right->add($f_surname); 
 
-You will often need to create an object, configure it, and then plug it into the object that will be using it: 
+When using setModel() you can either pass a name of a new model class or a pre-configured model object:
 
     // In a Page class
 
@@ -90,14 +87,12 @@ You will often need to create an object, configure it, and then plug it into the
 
     // Now add it to the Form object
     
-    $f_user = $this->add('Form');
-    $f_user->setModel($m_user);
+    $c = $this->add('CRUD');
+    $c->setModel($m_user);
 
-## Adding Models with setModel()
+## Using setModel() on Views
 
-Using `setModel()` will have different results in different contexts. For example adding a Model to a Page object will set the Model data into the page's template. Adding the same Model to a Grid object will populate the grid columns with data. Check out each class's documentation for details.
-
-If you add a Model with `setModel()`, you can access it through the parent's `model` property, which is useful if you need to reuse it: 
+Using `setModel()` will have different results in different contexts. For example adding a Model to a Page object will set the Model data into the page's template. Adding the same Model to a Grid object will populate the grid columns with data. Check out each class's documentation for details. Generic objects such as "View" or "Controller" wouldn't do anything when setModel() is called apart from assigning `$obj->model` to instance of a specified model, initialising it if necessary: 
 
     // In a Page class
 
@@ -116,21 +111,21 @@ For example Grid allows you to specify a list of fields to use as columns as a s
     // Define the columns to display
     $grid->setModel('Customer', array('name', 'email', 'zip'));      
 
-The CRUD object is similar, but `setModel()` accepts two parameters, listing columns for viewing and columns for editing. 
+The CRUD object is similar, but `setModel()` accepts two parameters, listing columns for viewing and columns for editing. Again - the arguments may be different for other classes, so check with individual documentation.
 
 ## Adding Controllers With setController()
 
 In Agile Toolkit an object can use multiple Controllers. Controllers enhance the functionality of your object. 
 
-In most cases using `$c = add('Controller_Foo')` is correct. But some classes are specifically designed to work with pluggable Controllers and require you to call `setController('Foo')` if you need to change the default. This will be covered in the class's documentation.
+In most cases using `$c = add('Controller_Foo')` is correct. But some classes are specifically designed to work with pluggable Controllers and require you to call `setController('Foo')` if you need to change the default. Calling this method will also update `$obj->controller` to the instance of Foo controller. This will be covered in the class's documentation.
 
 ## Chaining Object Methods
 
-In the true spirit of jQuery, most object methods will return a reference to themselves (`return $this;`) so you can chain your method calls:
+In the true spirit of jQuery, most object methods in Agile Toolkit will also return a reference to themselves (`return $this;`) so you can chain your method calls:
 
      $this->add('FormAndSave')
          ->setModel($model)
-         ->loadData($this->api->auth->get('id'));
+         ->load($this->api->auth->get('id'));
 
 You can also chain calls to existing objects:
 
@@ -140,57 +135,47 @@ You can also chain calls to existing objects:
         ->addCondition('account_type', 'trade_1')
         ->loadAny();
 
-In your own classes, it's good practice to add `return $this;` to any method that configures the object, so you can chain your method calls.
+In your own classes, it's good practice to add `return $this;` (unless you need to provide some other type of return value) to any method that configures the object, so you can chain your method calls later.
 
 ## Accessing Added Objects
 
-`AbstractObject` provides two methods for accessing objects you have added into a parent object:
+`AbstractObject` provides two methods for accessing objects you have added into a parent object previously:
 
     $view = $page->add('View','myview');
 
     $v = $page->hasElement('myview');    // Returns $view or false
-    $v = $page->getElement('myview');    // Returns $view or exception
+    $v = $page->getElement('myview');    // Returns $view or throws exception
 
-These are used frequently to customize objects at runtime.
+These are used frequently to customize objects at runtime. Please note that you won't be able to access some objects through getElement() because of memory-optimization done by Agile Toolkit. Those methods will return `true` instead:
+
+    $page->add('Model_User','user_m');
+    
+    $user_m = $page->getElement('user_m');    // returns true
+    
+    
+The correct way here to simply keep the object reference from the `add()` method:
+
+    $user_m = $page->add('Model_User');
 
     
 ## Destroying Added Objects
 
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    TODO: I've pulled this out into its own section as it seems
-    to be a different topic from accessing objects. 
-    
-    I don't find the docs clear here.
+After objects have been added - you can also `destroy()` them. If you do that before rendering phase, the objects will not appear on the screen.
 
-    1) With Models, you say we can't get them through the Element()
-       methods. But if you use setModel() you can use $obj->model.
-       HOw does garbage collection work differently in these 2 cases?
 
-    2) What is the practical difference between $view->destroy()
-       and unset($view)?
+    $button = $page->add('Button');
+    $button->destroy();
 
-    3) Can we offer clear guidlines about when you would or would
-       not destroy a Model?
 
-    I'll redraft this once I understand better...
+<!--  romans: i have left the very minimum on object destroying.
+  unset($view) will do nothing in practice, so i'm not even mentioning
+  it. you don't really need to destroy model, it will garbage collect
+  if you don't use it  -->
 
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-But to aid garbage collection, Models can't be accessed. If you call getElement() to look for a Model, you'll get `true` instead of an object. So to access Models, set a reference into a variable when you `add()` it, or use `$obj->setModel()` and access the $obj->model property.
-
-    $model = $page->add('Model_Book');
-    unset($model);                  // Will destroy $model
-    
-    $view = $page->add('View');
-
-    $view->destroy();               // Removes object from parent
-    unset($view);                   // Will destroy $view
-
-You don't need to call `unset()` if `$view `or `$model` is a local variable inside your method (it will be garbage collected by PHP) or if you are going to be using it for something else.
         
 ## Objects With Global Scope
 
-Instead of using PHP's GLOBAL scope, Agile Toolkit gives all objects the ability to access the Application class through its `api` property. If you want your object to accessible from any object, add it to the Application class. This pattern is very similar to how plugins work in jQuery.
+Instead of using PHP's GLOBAL scope, Agile Toolkit gives all objects the ability to access the Application class through its `api` property. If you want your object to accessible from other objects, add it to the Application class. (This pattern is very similar to how plugins work in jQuery when they register a method in jQuery namespace).
 
 Here's a simple Agile Toolkit app:
 
@@ -215,7 +200,7 @@ Here's a simple Agile Toolkit app:
 
 In Agile Toolkit, we don't initialize objects with PHP's `__construct()` method. Instead, when you add an object Agile Toolkit will automatically execute an `init()` method in the new object. 
 
-This allows us to set properties used by the Runtime Object Tree such as  `owner`, `api` and `name` before the object is initialized.
+This allows us to set properties used by the Runtime Object Tree such as  `owner`, `api` and `name` before the object is initialized. Additionally Views will initialize template before
 
 Here's a short code extract from the password StrengthChecker Addon. It checks that you're adding the object to a password field.
 
@@ -227,9 +212,7 @@ Here's a short code extract from the password StrengthChecker Addon. It checks t
         function init()
         {
             parent::init();
-
             if(!$this->owner instance_of Form_Field_Password){
-
                 throw $this->exception('Must be added to a Password field');
             }
 
@@ -237,30 +220,16 @@ Here's a short code extract from the password StrengthChecker Addon. It checks t
         }
     }
 
-## Locating Your Code Inside Objects 
+## Placing Your Code Inside Objects 
 
-In addition to the `init()` method, any `render()` method within a view will be called as the Runtime Object Tree is rendered.
+In addition to the `init()` method, you may redefine and extend few other menthols inside your object. Placing in the proper method may improve performance of your objects, for example  using `render()` method within a view will be called as the Runtime Object Tree is rendered and in some cases your logic will not be executed when your objects is not visible on the page.
 
 Here are some rules of thumb:
 
 1. If code is for adding more sub-elements through composability, place it inside `init()`
-2. If code needs to iterate through Model data, place it inside a `render()` method
-
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    TODO: I don't understand this - setModel()
-    is a method call - how can you put code inside
-    it??
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+2. If code is adding sub-elements but relies on a model, place it inside `setModel()`
+2. If code needs to perform some heavy operations on the database, place it inside `render()` method
 3. If code needs to add more sub-elements but must access database or model structure for it - place it inside setModel().
-
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    TODO: can we clarify please? When is render()
-    called, and when is it not called? I find
-    this confusing as it stands.
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-Keep in mind that `init()` will be called whenever part of your page is redrawn via AJAX, but `render()` won't. If you are executing an expensive CURL request, for example, it will be much more efficient to put it inside `render()`.
 
 ## Configuring Object Properties
 
@@ -298,28 +267,26 @@ In Agile Toolkit you will frequently be changing your objects after they are add
 
     $book = $this->add('Model_Book');
     $author_join = $book->leftJoin('author');
-    $author_join->addField('name')->type('readonly')->caption("Author's Name")
+    $author_join->addField('first_name')->type('readonly')->caption("Author's First Name")
 
     // Now you can use this Model inside a Grid and it 
-    // will show the author name for each book
+    // will show the author first_name for each book amongst other fields
     
     $this->add('Grid')->setModel($book);
 
 ### How To Use newInstance()
 
-If you call `$book->newInstance()` it will create a new object of a same class (`Model_Book`). The new instance, however, will not have the added author join. This can be useful in some cases when you want to work with a copy of a model:
-
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    TODO: we need to clarify, I think.  How is 
-    this different from just using add()?
-    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+If you call `$book->newInstance()` it will create a new object of a same class (`Model_Book`). The new instance, however, will not have the added author join. This method is used inside a generic objects which does not know anything about your model. `newInstance` is almost like an add() but you don't need to specify class name for it:
 
     function duplicate()
     {
-        return $this->newInstance()->set($this->get())->save();
+        return $this
+            ->newInstance()
+            ->set($this->get())
+            ->save();
     }
 
-This example implements a generic duplication method. It will create a new Model of a same class, copy in the data from the current Model into new one and call save.
+This example implements a generic duplication method. It will create a new Model of a same class, copy in the data from the current Model into new one and call save. The original `$this` object is not affected.
 
 ### Cloning Objects
 
@@ -333,41 +300,13 @@ When you use the PHP `clone` statement the whole object is duplicated into an in
     $this->add('Grid')->setModel('book');
     $this->add('Grid')->setModel('book_archive');
     
-This code will display two grids - one for regular books and another for archived. Because objects are cloned, adding conditions to one will not affect the other.
-
-But be careful &ndash; there's a gotcha when you clone hooks.
-
-To continue the example above, say you have a hook inside `Model_Book` to check a value before saving:
-
-    // In Model_Book
-
-    function init()
-    {
-        parent::init();
-        
-        $this->addField('review');
-        $this->hasOne('Author');
-        
-        $this->addHook('beforeSave', array($this,'check'));
-    }
-
-    function check($m) 
-    {
-        if (strlen($this['review']) < 100) {
-
-            throw $this->exception('Review is too short');
-        }
-    } 
-       
-After cloning, `$this` will be referencing the wrong object! Saving our Model with `$book_archive->save()` will call `$book->check()`, and `$this` will validate the value of `$book` instead of `$book_archive`.
-
-You can avoid this problem if you use the Model passed in as `$m` instead of `$this` inside a hook. In the above example, `$m` will point to `$book_archive`.
+This code will display two grids - one for regular books and another for archived. Because objects are cloned, adding conditions after clone to one will not affect the other. Conditions added before clone will apply to both objects.
 
 ## Object Naming
 
 A call to `add()` assigns your new object a unique name within the Application. This is a useful property whenever you need a unique id such as for HTML elements (`<div id="...">`), GET arguments or session values.
 
-Typically Agile Toolkit will append the class name to `$owner->name` along with a unique number, but if you specify a string as the second argument to `add()` you can alter part of the name.
+Typically Agile Toolkit will append the class name to `$owner->name` along with a unique number, but if you specify a string as the second argument to `add()` you can alter part of the name. In some cases the long names might be shortened automatically.
     
     // Automatic naming
     $my_object = $api->add('myClass');
@@ -442,7 +381,7 @@ As we have seen, `AbstractObject` provides a number of useful properties to ever
     </tbody>
 </table>
 
-These properties are declared as `public` so that they can be read by Addons, but it's bad style to change them directly. Here are the methods you should use to work with these properties:
+These properties are declared as `public` so that they can be read by Addons, but it's bad style to change them directly. Here are the methods you should use to edit these properties:
 
 * **$short_name**, $name: `$obj->rename('new_name')`
 * **$elements**: `$obj->add(); $obj->getElement(); $child->destroy()`
