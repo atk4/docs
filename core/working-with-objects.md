@@ -190,7 +190,7 @@ You don't need to call `unset()` if `$view `or `$model` is a local variable insi
         
 ## Objects With Global Scope
 
-Instead of using PHP's GLOBAL scope, Agile Toolkit gives all objects the ability to access the Application class through its `api` property. If you want your object to accessible from any object, add it to the Application class. This pattern is very similar to how plugins work in jQuery.
+Instead of using PHP's GLOBAL scope, Agile Toolkit gives all objects the ability to access the Application class through its `api` property. If you want your object to be accessible from any object, add it to the Application class. This pattern is very similar to how plugins work in jQuery.
 
 Here's a simple Agile Toolkit app:
 
