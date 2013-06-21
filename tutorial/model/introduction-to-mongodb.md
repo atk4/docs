@@ -115,7 +115,7 @@ TODO: Can't make any sense of this: can you clarify?
 
 While we recommend using an `id` field in SQL, Mongo uses the `_id` field internally. 
 
-If you want to write a portable code, you should rely on `$model->id` property instead.
+If you want to write a portable code, you should rely on the `$model->id` property instead.
 
     $model['user_id']=$this->api->model->id;
     
@@ -152,7 +152,7 @@ When you load a Model `MondoId` will be cast to a string, so you can use it in U
 
     $this->api->url('author/info', array('id' => $book['author_id']]));
 
-### Hooks and behaviors
+### Hooks And Behaviours
 
 You'll find that `Mongo_Model` contains all the same hooks you're used to in `SQL_Model`: `beforeSave`, `afterSave`, `beforeInsert`, `afterUpdate`, `beforeUpdate`, `afterDelete`, `beforeDelete`, `afterDelete`, etc. 
 
