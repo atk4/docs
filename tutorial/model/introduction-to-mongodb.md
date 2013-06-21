@@ -1,34 +1,40 @@
-Introduction to MongoDB
-====
-MongoDB is currently the most popular NoSQL engine implementing document storage. If have been using Agile Toolkit with MySQL, I strongly encourage you to try MongoDB.
+# Tutorial > Introduction to MongoDB
 
-This document will help you get started quickly even if you never have used MongoDB before.
+MongoDB is currently the most popular NoSQL engine implementing document-oriented storage. This type of storage can greatly simplify many areas that are that are a challenge for traditional relational modelling, such as ecommerce products. Mongo is fast, convenient and relatively easy to learn: if you have a suitable application, I strongly encourage you to try it.
 
-### Installing Mongo
-Simply follow some on-line guide on how to get Mongo on your local computer, because that's where we will be developing.
+There is also [TokuMX](http://www.tokutek.com/products/tokumx-for-mongodb/), a fork of Mongo by Tokutek, which adds ACID transactions together with speed and scalability enhancements. TokuMX aims to be a drop-in alternative to Mongo. This widens the possible applications for the document storage approach.
 
- * [http://stackoverflow.com/questions/3772582/mongodb-and-mamp](http://stackoverflow.com/questions/3772582/mongodb-and-mamp)
+Agile Toolkit offers a full-featured Mongo Model which integrates your Mongo data smoothly with CRUD, Grid and other View components using the syntax you already know from `Model_SQL`.
 
-You will need to have "PHP Driver" as well as MongoDB server running. For production use, please refer to MongoDB documentation.
+This document will help you get started quickly even if you're new to Mongo.
 
-Once that's all setup, you should be able to connect from your command-line:
+## Installing Mongo
+
+Mongo is easy to install.
+
+On Lunux you should be able to install Mongo from a distro package. Then run: `$ pecl install mongo` to set up the PHP driver, add `extension=mongo.so` to  your php.ini file, restart PHP and you're good to go.
+
+On Windows you can find detailed guidance on the [MongoDB website](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/) or use a WAMP stacks such as [Z-WAMP](http://zwamp.sourceforge.net/) that includes MongoDB.
+
+Once you're set up, you should be able to connect from your command-line:
 
     $ mongo
     MongoDB shell version: 2.4.4
     connecting to: test
     > 
 
-and phpinfo(); should tell you some information about mongodb driver.
+In PHP, you can run `phpinfo()` to confirm that your driver is available.
 
+## Creating a MongoDB based CRUD
 
-Creating a MongoDB based CRUD
-----
-
-Start by creating a new model:
+Start by creating a new Model:
 
     class Model_Test extends Mongo_Model {
+
         public $table='test';
-        function init(){
+
+        function init()
+        {
             parent::init();
             
             $this->addField('name');
@@ -41,113 +47,132 @@ Then add this to your page:
 
     $this->add('CRUD')->setModel('Test');
 
-And finally in your config file:
+And finally, in your config file:
 
     $config['mongo']['db']='mydb';
     
-You should have a working CRUD! With Mongo you don't need to create table structure or adjust them, they will be adjusted on the fly. If you need one more field, simply declare it in the model and that's all.
+That's all you need to set up a working CRUD! You don't need to manually create your table structure: Mongo handles this for you on the fly. If you need an additional field, simply declare it in the Model and you're done.
 
-Implementation Details
-----
+## Implementation Details
+
 MongoDB Model support is implemented using the new Controller_Data, therefore if you look into the "[Mongo_Model](https://github.com/atk4/atk4/blob/master/lib/Mongo/Model.php)" class you'll find that it's pretty short. The majority of the logic lives inside [Controller_Data_Mongo](https://github.com/atk4/atk4/blob/master/lib/Controller/Data/Mongo.php).
 
-This makes our Mongo implementation universal and flexible and sitting there along with other data controllers such as [Array](https://github.com/atk4/atk4/blob/master/lib/Controller/Data/Array.php), [MemCache](https://github.com/atk4/atk4/blob/master/lib/Controller/Data/Memcached.php) and [Session](https://github.com/atk4/atk4/blob/master/lib/Controller/Data/Session.php).
+This makes our Mongo implementation compatible with other data controllers such as [Array](https://github.com/atk4/atk4/blob/master/lib/Controller/Data/Array.php), [MemCache](https://github.com/atk4/atk4/blob/master/lib/Controller/Data/Memcached.php) and [Session](https://github.com/atk4/atk4/blob/master/lib/Controller/Data/Session.php).
 
-### Specifying collection
-Collection in Mongo is same as 'table' in SQL. For compatibility you specify $table property in your model which is used to select a collection.
+## Specifying The Model Collection
 
-### Joins
-Mongo does not support joins, therefore you can't use SQL-specific `join()` syntax.
+A 'collection' in Mongo is roughly equivalent to a 'table' in SQL. 
 
-### Traversing
-Mongo has a full support for traversing in both directors:
+For compatibility, you specify a collection using the `$table` property in your Model.
 
-    // In Model Book:
+## Traversing references
+
+Mongo doesn't support SQL joins, so you can't use SQL-specific `join()` syntax.
+
+But Mongo does support referencing between documents, allowing us to traverse references in both directions as you would with relations in `SQL_Model`:
+
+    // In Model_Book:
+
     $this->hasMany('Chapter');
     $this->hasOne('Author');
 
-This works identical to SQL implementation, so you can use in your code:
+So just as with SQL Models, you can do this in your code:
 
     $author = $book->ref('author_id');
-    
     $chapters = $book->ref('Chapter');
     
-### Conditions
-Mongo supports conditions and you can define them in the format you're used to:
+## Conditions
 
-    $model->addCondition('over_18',true);
+Mongo_Model supports conditions in the format you're used to:
+
+    $model->addCondition('over_18', true);
     
-This will affect new records you create as well as limit records which model can access. Mongo provides support for advanced conditions, therefore if you wish to use those:
+This will affect new records you create as well as limit records which your Model can access. 
 
-    $model->addCondition('age',array('$gt'=>18, '$lt'=>65));
+Mongo provides support for advanced conditions, which you can access like this:
 
-Or you can use more advanced conditions like this:
+    $model->addCondition('age', array('$gt'=>18, '$lt'=>65));
+
+Or you can access the full power of the Mogo query language like this:
 
     $model->addCondition('$where',
        "function() { return this.name == 'Joe' || this.age == 50; }");
 
-    $model->addCondition('search_index',new MongoRegex("/^$prefix/"));
+    $model->addCondition('search_index', new MongoRegex("/^$prefix/"));
 
-    $email
-        ->addCondition('$or',array(
-            array('from_id'=>new MongoID($user->id)),
-            array('to_id'=>new MongoID($user->id))
+    $email->addCondition('$or', array(
+            array('from_id'=> new MongoID($user->id)),
+            array('to_id'=> new MongoID($user->id))
         ));
-
 
 You should refer to [PHP](http://php.net/manual/en/mongocollection.find.php) and [MongoDB](http://docs.mongodb.org/manual/reference/operator/) documentation for more information.
 
-### ID Field
-While we recommend using `id` field in SQL, mongo uses `_id` field. If you want to write a portable code, you should rely on `$model->id` property instead. 
+## ID Field
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+TODO: Can't make any sense of this: can you clarify?
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+While we recommend using an `id` field in SQL, Mongo uses the `_id` field internally. 
+
+If you want to write a portable code, you should rely on `$model->id` property instead.
 
     $model['user_id']=$this->api->model->id;
     
-### Field types
+## Field types
 
-While SQL usually stores only string values in its fields (or something which can be expressed by a string, such as integers), Mongo can store practically any data-type in any field. Here is example:
+While SQL usually stores only string values in its fields (or something which can be expressed by a string, such as integers), Mongo can store practically any data-type in any field. For example:
 
     $model->addField('interests')
         ->defaultValue(array('fishing','reading'))
         ->system(true);
 
-Because array is not supported by Form, and Grid (yet), I have set the `system` flag on this field to keep it from appearing in the UI. You can, however, access it easily.
+Because array values aren't supported by Form or Grid (yet), I've set the `system` flag on this field to keep it from appearing in the UI. You can, however, access it easily:
 
     $model->load($id);
-    $this->template->set('interests',join(',',$model['interests']));
+    $this->template->set('interests', join(',', $model['interests']));
     
-Due to PHP limitation, you can't modify the array through some syntax:
+But there's a gotcha here. Due to limitations in PHP, you can't modify the Model value with array syntax:
 
+    // This won't work
     $model['interests'][]='cycling';
     
-You would need to use a temporary variable for that. Perhaps that would be fixed in the future versions of PHP.
+So you need to use a temporary variable:
 
+    // This is the way to go
     $tmp = $model['interests'];
     $tmp[]='cycling';
-    $model['interests']=$tmp;
-    
-You should also keep in mind, that reference fields (fields containing IDs) are using special objects of type MongoID. Fortunately Model will do some work for you and if you specify those IDs as a string (passed from GET) they will automatically be converted into MongoID when your model is saved.
+    $model['interests'] = $tmp;
 
-MongoID object can be cast into string normally, so you can use it in URLs:
-
-    $this->api->url('author/info',array('id'=>$book['author_id']]));
+Hopefully this limitation will be fixed in future versions of PHP.
     
+You should also keep in mind, that reference fields (fields containing IDs) are using special objects of type `MongoID`. Fortunately, Model will handle this for  you in the background, so if you specify a reference ID as a string (passed from GET, for example) it will automatically be converted to `MongoID` when your Model is saved.
+
+When you load a Model `MondoId` will be cast to a string, so you can use it in URLs:
+
+    $this->api->url('author/info', array('id' => $book['author_id']]));
 
 ### Hooks and behaviors
 
-Mongo Model contains all the same hooks you would expect model to have: `beforeSave`, `afterSave`, `beforeInsert`, `afterUpdate`, `beforeUpdate`, `afterDelete`, `beforeDelete`, `afterDelete`, etc. Obviously there are no query passed as inside SQL Model, but you still can modify model settings. Here is a interesting way how to index your collection:
+You'll find that `Mongo_Model` contains all the same hooks you're used to in `SQL_Model`: `beforeSave`, `afterSave`, `beforeInsert`, `afterUpdate`, `beforeUpdate`, `afterDelete`, `beforeDelete`, `afterDelete`, etc. 
+
+Obviously there is no DSQL query passed to the callback handler, as there is with `SQL_Model`, but you can still modify Model settings. Here is a interesting way to index your collection:
 
     $this->addField('search_index')->system(true);
-    $this->addHook('beforeSave',function($m){
-        $m['search_index']=array_map('strtolower',array_map('trim'
-            ,explode(' ',$m['name'].' '.$m['email'])));
+
+    $this->addHook('beforeSave', function($m){
+
+        $m['search_index'] = array_map('strtolower', array_map('trim'
+            , explode(' ', $m['name'].' '.$m['email'])));
     });
+
     $this->db()->ensureIndex('search_index');
 
-### Accessing Collection Object
+### Accessing The PHP Collection Object
 
-Mongo model makes it easy for you to access [MongoCollection class object](http://www.php.net/manual/en/class.mongocollection.php) - simply call $model->db().
+As you've just seen, Mongo Model makes it easy for you to access the [MongoCollection class object](http://www.php.net/manual/en/class.mongocollection.php) directly &ndash; simply call `$model->db()`.
 
-This lets you access lots of other interesting operations as well as access MongoDB class itself similar as how it's [explained in PHP documentation](http://www.php.net/manual/en/mongocollection.aggregate.php):
+And through `MongoCollection`, you can access powerful features such as [the Mongo aggregation framework](http://www.php.net/manual/en/mongocollection.aggregate.php):
 
     $ops = array(
         array(
@@ -156,7 +181,9 @@ This lets you access lots of other interesting operations as well as access Mong
                 "tags"   => 1,
             )
         ),
+
         array('$unwind' => '$tags'),
+
         array(
             '$group' => array(
                 "_id" => array("tags" => '$tags'),
@@ -164,34 +191,36 @@ This lets you access lots of other interesting operations as well as access Mong
             ),
         ),
     );
+
     $result = $article_model->db()->aggregate($ops);
 
-You can also access the MongoDB class [for things such as text query](http://docs.mongodb.org/manual/tutorial/search-for-text/):
+You can also access the MongoDB class [for features such as text query](http://docs.mongodb.org/manual/tutorial/search-for-text/):
 
     $results = $article_model->db()->db->command(array(
         'text'=>$article_model->table,
         'search'=>$search
     ));
     
-### Using Cursors
-When you are using some custom queries you might end up with a cursor and would want to do something useful with it. Remember that `Lister`, or `Grid` can operate with any object which implements `Iterator` interface, so chances are you could do this:
+## Using Cursors
+
+The Mongo driver offers [cursors](http://php.net/manual/en/class.mongocursor.php), which can be used elegantly within the Toolkit.
+
+You'll recall that `Lister`, or `Grid` can operate with any object implementing the `Iterator` interface, so you can display your results like this:
 
     $grid->addColumn('line','name');
     $grid->addColumn('line','age');
     $grid->setSource($cursor);
     
-which will show your results nicely.
+## Other Toolkit Features That Simply "Work"
 
+Many other features of Agile Toolkit play nicely with Mongo:
 
-### Other features which simply "work"
-Many other features of Agile Toolkit simply work with Mongo:
-
- - Paginator just works
- - Column sorting just works
+ - Paginator
+ - Column sorting
  - Limits and setOrder
- - CRUD::addRef works
- - Model iterating works
- - Filestore works
- - Many other add-ons work.
+ - CRUD::addRef
+ - Model iterating
+ - Filestore
+ - And many other Addons work too.
  
-If something what supposed to work doesn't - [please submit a bugreport](https://github.com/atk4/atk4/issues).
+But if you find anything that doesn't work as advertised, please [submit a bugreport](https://github.com/atk4/atk4/issues).
