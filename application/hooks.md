@@ -15,15 +15,12 @@ First, an object offers a "spot" where you can register callback code. So in `Mo
     function save()
     {
         $this->hook('beforeSave');
-
         // ...
-
     }
 
 Then in your own code you might have:    
 
-    $model->addHook('beforeSave', function($m){
-
+    $model->addHook('beforeSave', function($m) {
         $m['card_mask'] = substr($m['card_num'], -4);
     });
 
@@ -33,13 +30,11 @@ You can place hook anywhere in your code, even inside Model's `init()` method:
 
 
     class Model_Customer extends Model_Table {
-        
         function init(){
-          
+                      
             // ...
-            
+                      
             $this->addHook('beforeSave',function($m){
-
                 $m['updated_at'] = date('Y-m-d G:i:s', time());
             });
         }
@@ -67,7 +62,6 @@ The first argument is the name of the spot, and the second is a callable PHP typ
 As we've seen, the typical callable is a closure:
 
     $this->addHook('beforeModify', function($m){
-
         // ...
     });
 
@@ -291,6 +285,4 @@ These enable you to run code at specific points in the execution flow:
 
     * **preInit, preExec, postSubmit, preRender, postJsCollection, preRenderOutput & postRenderOutput** &ndash; these hooks are always executed at the relevant point in the execution flow. For example if you want to output how many database queries executed during an Application run, you would output it on 'PostRenderOutput'.
 
-    <!--x What would you use cutOutput for?? x-->
-
-    * **cutOutput, submitted** &ndash; these are conditional hooks. `cutOutput` is called when only part of the page is being redrawn. The `submitted` hook is called when POST data is received from any Form. (The Form object actually uses this hook to process POST data).
+    * **cutOutput, submitted** &ndash; these are conditional hooks. `cutOutput` is called when only part of the page is being redrawn. You can use it to stop execution timer, as postRenderOutput wouldn't be called. The `submitted` hook is called when POST data is received from any Form. (The Form object actually uses this hook to process POST data).

@@ -1,11 +1,5 @@
 # Core > Working With Objects
 
-    <!--x 
-        Note: I've removed Element Tracking - doesn't feel 
-        like a beginner topic. Should be covered in an Article, 
-        I would suggest.
-    x-->
-
 ## Overview
 
 In this Tutorial we cover the fundamental principles for working with objects in Agile Toolkit. 
