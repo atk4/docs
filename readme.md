@@ -42,7 +42,7 @@ One object is always mandatory for your application - Application Class.
 <!-- GEOFF, we have 2 links to application overview, here and above under Overview section -->
 
  * Application Class Overview
- * Pages - Request Routing
+ * [Pages - Request Routing](application/routing.md)
  * Configuration File Use
  * Database Connectivity
  * User Authentication

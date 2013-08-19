@@ -53,4 +53,36 @@ As a result, several behaviors are observed:
  
 Obviously Grid inherits all the features of the View as well as you can manipulate `$grid->model` in any way model can be manipulated making it possible to change styling, positioning, size and rendering of a grid, conditions, order or other properties of a select query.
 
-### 
+### How to create and use Formatters?
+While most situations can be solved with generic grid, it does need to display data in a reasonable formats. But how does Grid determine a type of your column?
+
+#### Field `type()`
+Model's field `type()` method can be used to specify the type of the column. There are defined set of supported types, and the primary purpose of this setting is to define how data is stored.
+
+When you call `grid->setModel` it creates a new object - `Controller_MVCGrid` which is responsible for populating columns inside Grid and also matches data-types into grid column types. For example `list`, `int` type is displayed as `text`, `money` uses formatter also named `money` and `text` is displayed using `shorttext` formatter, which shows just a fragment of your long text fields.
+
+If you want to implement your own type and it's associations, look into [Creating your own Grid Controller](TODO)
+
+#### Field `display()`
+Allows you to specify formatter exactly. Does not affect the behavior of the model. Can either target all views with `type('password')` or only grid with `type(array('grid'=>'password'))`. 
+
+You can specify a display type either inside your model definition or inside presentation logic, like this:
+
+    $m=$this->add('Model_Book');
+    $m->getElement('author')->display('link');
+    $this->add('Grid')->setModel($m);
+    
+#### addColumn()
+This method adds new column to your grid. Even if you are using Model, you can still add few extra columns and use custom formatters.
+
+Formatter needs to be defined as a method of a grid.
+    
+    class MyGrid extends Grid {
+        function format_smiley($field) {
+            $this->current_row[$field] = 
+                str_replace(':)','☺',$this->current_row[$field]);
+        }
+    }
+    $grid=$this->add('MyGrid');
+    $grid->addColumn('smiley','my field');
+    
