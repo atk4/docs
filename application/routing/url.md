@@ -39,6 +39,26 @@ logout | /admin/logout | Relative Page
 //yahoo.com | http://yahoo.com/ | Off-site page with same schema
 https://yahoo.com/ | https://yahoo.com/ | Off-site page of specific schema
 
+## URL prepend and append
+
+Through configuration file you can define 2 properties:
+
+    $config['url_prefix']='?page=';
+    or
+    $config['url_postfix']='.html';
+
+Those would be applied on all the generated URLs before and after page. So instead of:
+
+    /admin/user/profile/edit
+    
+you would get
+
+    /admin/?page=profile/edit
+    
+or
+
+    /admin/user/profile/edit.html
+
 ## Exercise
 
 Place the below example in your application, and you can discover how URL building works for yourself:
