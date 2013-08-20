@@ -60,9 +60,26 @@ If you are running NGINX, here is sample configuration:
       fastcgi_param SCRIPT_FILENAME "/www/path/admin/index.php";      
     }
 
+
+
+# Advanced Topics: TO BE REMOVED
+# Advanced Topics: TO BE REMOVED below
+
 Traditionally URL consists of the page itself (user/details) and then arguments (?id=123). Some web software applications try to hide everything into session arguments, others try to bloat it with lengthy arguments. Typical application in Agile Toolkit straights the right balance by only including information necessary to reproduce the page on the screen and tries to pass only "ids". Form data almost always is sent through the POST data.
 
 Agile Toolkit routing designed to be simple, yet extensible and I will introduce it throughout a series of concepts.
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Who is responsible for Routing
 
