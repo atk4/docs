@@ -20,7 +20,7 @@ Agile Toolkit will parse your URL on request and connect it to the proper code. 
  * [Generating URLs and redirecting, relative URLs](routing/url.md)
  * [Sticky GET arguments](routing/sticky.md)
  * [URLs to your assets: images, css, js](routing/assets.md)
- * [Using PatternRouter for SEF (search engine friendly) routing](routing/pathfinder.md)
+ * [Using PatternRouter for SEF (search engine friendly) routing](routing/patternrouter.md)
  
 ## Introduction to Routing
 
