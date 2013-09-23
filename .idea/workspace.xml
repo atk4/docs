@@ -28,7 +28,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4intro.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4section1.md" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web_development_with_agile_toolkit/doc/book.pdf" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web_development_with_agile_toolkit/title.md" afterPath="$PROJECT_DIR$/web_development_with_agile_toolkit/readme.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
