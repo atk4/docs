@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 ##### CHAPTER 2
 -----
 
@@ -16,3 +18,5 @@ There are 3 direct descendants of AbstractObject which are:
 * AbstractController - for all the classes which implement a library-like functionality.
 
 This chapter will focus on those four core classes.
+
+[Next Section](section1.md "Next Section")

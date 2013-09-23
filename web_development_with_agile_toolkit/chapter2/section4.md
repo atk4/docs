@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 4
 ----
 ## AbstractView
@@ -76,3 +78,5 @@ Alternatively you could also specify both the file and a tag, in which case the 
             * $view->output();
 
 Each view in Agile Toolkit renders itself recursively by calling it's `render()` method which then appends the output to owners tmpalte. In the conclusion of this chapter I should note that Application class also inherits AbstractView and therefore your `$api` also have a template.
+
+[Next Section](section5.md "Next Section")

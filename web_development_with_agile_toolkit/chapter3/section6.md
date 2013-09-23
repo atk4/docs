@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 6
 ----
 ## Introduction to Relational Models of Agile Toolkit (ORM)
@@ -25,3 +27,5 @@ Agile Toolkit models can provide you with a pre-made DSQL object for you which y
 Relational models perfectly applies the concept of data-set to your database. You can define multiple models which access the same table, but would have a different set of conditions and therefore would have different data-sets.
 
 Agile Toolkit ensures that you would not be able to accidentally go outside of the data-set when you query, update, delete or insert data.
+
+[Next Section](section7.md "Next Section")

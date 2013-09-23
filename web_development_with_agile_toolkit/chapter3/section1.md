@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 1
 ----
 ## Introduction to Dynamic SQL Object (DSQL)
@@ -51,3 +53,5 @@ DSQL obsoletes SQL language completely and allows you to build ANY query or expr
 DSQL have no knowledge of your database, tables or table fields. All of the fields must be explicitly specified. DSQL will never change the database structure. DSQL will not have any complex logic apart from query building.
 
 DSQL does not attempt to implement all the possible fetching mechanisms and completely overlap PDO. In fact - you can still access PDO object embedded inside DSQL if you execute care.
+
+[Next Section](section2.md "Next Section")

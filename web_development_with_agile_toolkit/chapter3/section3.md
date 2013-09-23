@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 3
 ----
 ## Direct Use of DSQL
@@ -334,3 +336,5 @@ In this example, we were able to determine number of $rows in result set before 
 ### Debugging
 
 You can use $dsql->debug() to turn on debugging mode for the query. This will output some data using "echo" when the query is being rendered. DSQL will use font colors / HTML to highlight different parts of query.
+
+[Next Section](section4.md "Next Section")

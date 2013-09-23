@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 3
 ----
 ## Template Engine
@@ -81,3 +83,5 @@ SMLite is designed for producing HTML code (although it can be used to produce c
 template you should use `setHTML()` or `appendHTML()`.
 
 Providing the simplest way to also be the most secure way to specify the content is the policy of Agile Toolkit to improve safety.
+
+[Next Section](section4.md "Next Section")

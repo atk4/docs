@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 2
 ----
 ## Inspiration for Agile Toolkit
@@ -67,3 +69,5 @@ The screenshot here demonstrates a page containing Tabs which contains CRUD whic
     $tab = $tabs->addTab('User Admin');
     $user_crud=$tab->add('CRUD');
     $user_crud->setModel('User');
+
+[Next Section](section3.md "Next Section")

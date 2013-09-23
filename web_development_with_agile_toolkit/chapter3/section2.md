@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 2
 ----
 ## Fundamentals of DSQL
@@ -116,3 +118,5 @@ Table would need to be back-ticked and we don't really need to worry about expre
 Consume here would recursively render the expression and join the parameters from the subquery to our own. In some situations we would need to surround consume with a brackets, if SQL syntax requires it.
 
 NOTE: This exercise is mentioned here only to help you understand DSQL. You must not try to re-implement rendering of table or set arguments as it is already implemented properly in DSQL. Let's take look at other templates DSQL supports.
+
+[Next Section](section3.md "Next Section")

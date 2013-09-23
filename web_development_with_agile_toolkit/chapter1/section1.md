@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 1
 ----
 ## The history of “broken” PHP
@@ -34,3 +36,5 @@ So when PHP comes up with a set of features, we would carefully review them and 
 * Private properties and final classes. Unless in rare cases, you can't predict how your class will be used. Embrace extensibility and use "public $_prop" if you need to highlight that some property is public.
 * Keep the size of your classes reasonable. Don't make classes longer than a thousands lines of code.
 * Don't copy-paste your code. Remember to refactor it.
+
+[Next Section](section2.md "Next Section")

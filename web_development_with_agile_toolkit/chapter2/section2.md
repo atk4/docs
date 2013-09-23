@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 2
 ----
 ## Creating your first Command-Line application
@@ -27,3 +29,5 @@ and the output now would be different. Let's also connect to a MySQL database by
     $api->dbConnect();
 
 I will revisit work with database in Chapter 3 - Data Model.
+
+[Next Section](section3.md "Next Section")

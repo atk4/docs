@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 ##### CHAPTER 1
 -----
 
@@ -18,3 +20,5 @@ The biggest mistake you could make when learning Agile Toolkit is if you assume 
 The rest of the book will focus on all the components of Agile Toolkit and how the low-level implementation is abstracted and used to build a higher level of the toolkit. You will be able to see Agile Toolkit in three dimensions.
 
 *version 4.2.2 of Agile Toolkit*
+
+[Next Section](section1.md "Next Section")

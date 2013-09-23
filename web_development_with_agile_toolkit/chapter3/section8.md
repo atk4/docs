@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 8
 ----
 ## Relational Model Fields
@@ -139,3 +141,5 @@ Expression filed introduces one new property "expr" which stores your expression
         ->set('concat(name," ",surname)');
 
 When you are building expressions, be mindful that the fields you are referenced are SQL fields and are not model fields.
+
+[Next Section](section9.md "Next Section")

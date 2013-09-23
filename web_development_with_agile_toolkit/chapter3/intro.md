@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 ##### <center>CHAPTER 3</center>
 -----
 
@@ -18,3 +20,5 @@ To connect to the database you need to call `api->dbConnect();` For this method 
 * Counting number of queries in application
 * Using multiple connections
 * Connecting to noSQL databases
+
+[Next Section](section1.md "Next Section")

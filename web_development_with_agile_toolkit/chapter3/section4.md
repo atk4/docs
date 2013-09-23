@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 4
 ----
 ## DSQL - Practical Examples
@@ -51,3 +53,5 @@ Compared to other query builders - DSQL is more fluid, allows calling methods in
     $q=$db->dsql()->table('users');
     $q->set('votes',$q->expr('votes+1'));
     $q->update();
+
+[Next Section](section5.md "Next Section")

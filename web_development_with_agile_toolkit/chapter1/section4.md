@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 4
 ----
 ## Depth of Functionality
@@ -21,3 +23,5 @@ Let's draw some lines between Laravel's Fluent Query Builder and Agile Toolkit's
 However both query builders are on completely different levels. DSQL is template-based recursive on-demand renderer while Fluent builds query as-you-define it. Here are some of the things DSQL does and Fluent does not: Support for subqueries; Recursive rendering; Custom class design; Modifying existing query; Native integration with Model Fields.
 
 Because of design decisions in DSQL, it's possible to have a very fluid and dynamic Model / ORM implementation on top of it. Having said that, the implementations of both query builders is quite similar.
+
+[Next Section](section5.md "Next Section")

@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 5
 ----
 ## Introduction to Models
@@ -137,3 +139,5 @@ Model's method `loaded()` will return true if model have been loaded with any da
 ### Deleting model data
 
 You can delete a single record of data by calling delete($id) method or you can remove all data by calling deleteAll(). If you do not pass $id to delete() method, then the currently loaded data will be deleted.
+
+[Next Section](section6.md "Next Section")

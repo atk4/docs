@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 9
 ----
 ## Relational Model Use (ORM)
@@ -296,3 +298,5 @@ Later you can traverse by using `ref()` or `refSQL()`. For example, let's create
     );
 
 You might have already noticed one example with refSQL. When you are defining relations you can also specify which fields to use. The next chapter will look into Model() in details.
+
+[Chapter 4](../chapter4/intro.md "Chapter 4")

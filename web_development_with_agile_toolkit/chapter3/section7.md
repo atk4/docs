@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 7
 ----
 ## How Agile Toolkit ORM is unique?
@@ -127,3 +129,5 @@ As a bonus, I also added expression for "full_name".
 Relational Models in Agile Toolkit are able to use PHP language to describe complex SQL queries but also abstract tables, fields, subqueries and conditions. This is all done with minimum overheads on the PHP side.
 
 Advantages of using Agile Toolkit ORM are overwhelming. Consistency, stability, security, extensibility, abstraction are only few of the benefits. Before you could understand how to use Agile Toolkit ORM most efficiently, I must take you to one more diversion to introduce you to Model Fields.
+
+[Next Section](section8.md "Next Section")

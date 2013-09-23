@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 1
 ----
 ## AbstractObject
@@ -292,3 +294,5 @@ Agile Toolkit also adds hasMethod() into all object as a preferred way to check 
     }
 
 You can also remove dynamically added methods with removeMethod();
+
+[Next Section](section2.md "Next Section")

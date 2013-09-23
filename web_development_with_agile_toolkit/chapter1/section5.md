@@ -1,3 +1,5 @@
+[Home](../readme.md "Home")
+
 #### SECTION 5
 ----
 ## Challenges that Agile Toolkit solves
@@ -108,3 +110,5 @@ With just a few simple modifications any component in your code can be converted
 Have you ever worked on as software project within a team? Have you ever found a code added by other developer in your files which was breaking some of your functionality? This happens often, but not in Agile Toolkit.
 
 When you develop project in Agile Toolkit, you clearly separate things. For example you might have a dashboard page containing all sorts of views on them: recent purchases, account balance, current offer and advertisement block. Your dashboard page would most likely look like this:
+
+[Chapter 2](../chapter2/intro.md "Chapter 2")
