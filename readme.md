@@ -32,8 +32,8 @@ Core Features of All Objects
 All objects in Agile Toolkit descend from the same ancestor - AbstractObject which provides a range of features you can do with any object.
 
  * [Working with Objects](core/working-with-objects.md)
- * [Event Hooks](application/hooks.md)
- * [Namespaces and Add-ons](core/namespaces.md)
+ * [Event Hooks](core/event-hooks.md)
+ * [Namespaces and Add-ons](core/namespaces-and-addons.md)
  * [Pathfinder - Resource Manager](core/pathfinder.md)
 
 Application Class Features
