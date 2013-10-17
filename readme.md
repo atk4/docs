@@ -19,7 +19,7 @@ Installation
 ----
  * [Quick Start](installation/quick-start.md)
  * [Directory Structure](installation/directory-structure.md)
- * [Manual Installation](manual-installation.md)
+ * [Manual Installation](installation/manual-installation.md)
 
 Agile Toolkit Extensions
 ----
