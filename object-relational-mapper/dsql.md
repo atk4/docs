@@ -1,4 +1,5 @@
-# DSQL > Overview
+Object Relational Mapper > DSQL
+----
 
 ## What Is DSQL?
 
@@ -9,7 +10,7 @@ With DSQL your Models can build queries of open-ended complexity conveniently, f
 ## Why Use A Query Builder?
 
 Agile Toolkit executes all of its queries through DSQL. To SQL veterans this may seem limiting, but for an extensible framework DSQL offers essential benefits:
-	
+
 * Query-related information can be passed between objects
 * DSQL query objects can be modified much more easily and safely than SQL strings
 * DSQL can optimise the SQL generated for each supported RDBMS
@@ -19,14 +20,14 @@ Agile Toolkit executes all of its queries through DSQL. To SQL veterans this may
 
 ### Write portable SQL, or access the full power of your RDBMS
 
-DSQL is built on PHP's [PDO database abstraction library](http://php.net/manual/en/book.pdo.php). 
+DSQL is built on PHP's [PDO database abstraction library](http://php.net/manual/en/book.pdo.php).
 
 It's been tested with MySQL, SQLite, PostgreSQL and Oracle, but should work with other ANSI-SQL compatible databases supported by PDO.
 
-If you need to write portable code, you have access to PDO's database abstraction features. 
+If you need to write portable code, you have access to PDO's database abstraction features.
 
-Or if you prefer, DSQL will also give you access to most of the vendor-specific features of your chosen RDBMS. It's easy to [extend DSQL](/docs/data/dsql/extending) if it lacks any specific feature you require. And if you need to do something very specific with your database you can access PDO statement objects directly through `$dsql->stmt`. 
-	
+Or if you prefer, DSQL will also give you access to most of the vendor-specific features of your chosen RDBMS. It's easy to [extend DSQL](/docs/data/dsql/extending) if it lacks any specific feature you require. And if you need to do something very specific with your database you can access PDO statement objects directly through `$dsql->stmt`.
+
 ### Modify existing queries at any time
 
 Unlike most query builders DSQL allows you to add or remove any element of your query at any time, including fields, joins, conditions and parametric variables. You can even change the query type &ndash; from SELECT to DELETE for example. After you execute the query you can still reconfigure and reuse the object.
@@ -42,9 +43,9 @@ Another cool feature is the ability to use existing query objects within a DSQL 
 While all modern ORMS and Query Builders offer a mechanism for parametizing untrusted input it's often rather tedious to use.
 
     // PDO Example
-	
-	$sth = $dbh->prepare("select name from user where id = :id"); 	
-    $sth->execute(array(':id'=>$id));	
+
+	$sth = $dbh->prepare("select name from user where id = :id");
+    $sth->execute(array(':id'=>$id));
 	$name = $sth->fetchColumn();
 
 In DSQL the syntax is simpler, so even a harassed developer is less likely to take shortcuts and write unsafe code.
@@ -83,7 +84,7 @@ There are several pre-defined templates and you can easily add your own. This is
 
 ## Uses
 
-In Agile Toolkit, you build your relational Models with the [Agile ORM](/docs/data/agile-orm/overview). DSQL is primarily a low-level layer used by the ORM to generate SQL using its own convenient and object-oriented query syntax. Agile Models will cover most of your query needs, and whenever possible you should use this Model syntax rather than accessing DSQL directly. 
+In Agile Toolkit, you build your relational Models with the [Agile ORM](/docs/data/agile-orm/overview). DSQL is primarily a low-level layer used by the ORM to generate SQL using its own convenient and object-oriented query syntax. Agile Models will cover most of your query needs, and whenever possible you should use this Model syntax rather than accessing DSQL directly.
 
 	// BAD code:
 

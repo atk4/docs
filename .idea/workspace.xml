@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/features/exception-handling.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/exception-handling.md" afterPath="$PROJECT_DIR$/core/exception-handling.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/namespaces-and-addons.md" afterPath="$PROJECT_DIR$/core/namespaces-and-addons.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/agile-orm/basic-concepts.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/agile-orm/overview.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/agile-orm/validation.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/basic-usage.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/defining-queries.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/extending.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/overview.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/running-queries.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/overview/overview.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-organization/multiple-apps.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/project-organization/using-with-other-frameworks.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +94,7 @@
       <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1668" selection-end="1694" vertical-scroll-proportion="0.8525755">
+            <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.55950266">
               <folding />
             </state>
           </provider>
@@ -109,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section4.md" />
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section5.md" />
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section6.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section7.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section8.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section9.md" />
@@ -122,9 +128,12 @@
         <option value="$PROJECT_DIR$/application/authentication.md" />
         <option value="$PROJECT_DIR$/application/testing.md" />
         <option value="$PROJECT_DIR$/application/routing.md" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/core/exception-handling.md" />
         <option value="$PROJECT_DIR$/core/namespaces-and-addons.md" />
+        <option value="$PROJECT_DIR$/non-relational-models/introduction-to-model.md" />
+        <option value="$PROJECT_DIR$/application/multiple-interfaces.md" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/object-relational-mapper/dsql.md" />
       </list>
     </option>
   </component>
@@ -188,7 +197,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
+              <option name="myItemId" value="object-relational-mapper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -202,7 +211,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
+              <option name="myItemId" value="non-relational-models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -218,6 +227,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JADSC" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/object-relational-mapper" />
+      <recent name="$PROJECT_DIR$/application" />
+    </key>
   </component>
   <component name="RunManager">
     <list size="0" />
@@ -316,66 +331,37 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter1/section5.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.170515" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section1.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3197158" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toc.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="178" selection-end="178" vertical-scroll-proportion="0.026041666">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/manual-installation.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="29" selection-start="547" selection-end="547" vertical-scroll-proportion="0.21314387">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/directory-structure.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="143" column="0" selection-start="6871" selection-end="6871" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extensions/composer-packagist.md">
+    <entry file="file://$PROJECT_DIR$/tutorial/day1.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/authentication.md">
+    <entry file="file://$PROJECT_DIR$/non-relational-models/field-properties.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="52" selection-end="52" vertical-scroll-proportion="0.026041666">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/testing.md">
+    <entry file="file://$PROJECT_DIR$/controllers/introduction-to-controllers.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/dia-abstract-object.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/application/api-classes.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="260" selection-end="261" vertical-scroll-proportion="0.18650089">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/class-loading.md">
+    <entry file="file://$PROJECT_DIR$/installation/project-install.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="9" selection-end="22" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -387,37 +373,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/api-classes.md">
+    <entry file="file://$PROJECT_DIR$/application/pages-request-routing.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="26" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="28" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/working-with-objects.md">
+    <entry file="file://$PROJECT_DIR$/application/multiple-interfaces.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="26" selection-start="86" selection-end="86" vertical-scroll-proportion="0.07992895">
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/exception-handling.md">
+    <entry file="file://$PROJECT_DIR$/installation/integration.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="30" selection-end="30" vertical-scroll-proportion="0.026642984">
+        <state line="2" column="8" selection-start="23" selection-end="23" vertical-scroll-proportion="0.052083332">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/namespaces-and-addons.md">
+    <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/basic-usage.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/defining-queries.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/running-queries.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/extending.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.026642984">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object-relational-mapper/overview.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1668" selection-end="1694" vertical-scroll-proportion="0.8525755">
+        <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.55950266">
           <folding />
         </state>
       </provider>

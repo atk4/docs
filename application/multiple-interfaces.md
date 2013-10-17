@@ -1,6 +1,5 @@
-// SCRAPBOOK FOR REFACTORING //
-
-#### Multiple Interfaces
+Application Class Features > Multiple Interfaces
+ ----
 
 Most web software use multiple web interfaces. User Frontend and Admin are separate Web interfaces, both of which take advantage of the page concept. While backend functionality is shared between both - Models, Controllers, only Administrators may access the Admin interface so the "Auth" class would be configured differently.
 
