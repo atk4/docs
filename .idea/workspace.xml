@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/exception-handling.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/pathfinder.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/exception-handling.md" afterPath="$PROJECT_DIR$/core/exception-handling.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/pathfinder-resource-manager.md" afterPath="$PROJECT_DIR$/core/pathfinder-resource-manager.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/apis.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/authentication.md" afterPath="$PROJECT_DIR$/application/authentication.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/configuration.md" afterPath="$PROJECT_DIR$/application/configuration.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/testing.md" afterPath="$PROJECT_DIR$/application/testing.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,6 +64,7 @@
     <file path="$PROJECT_DIR$/../JADSC/shared/Model/Image.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014167245" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/lib/Lister/Photos.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382019792176" ignored="false" />
     <file path="/Photos.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382019765131" ignored="false" />
+    <file path="/authentication.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382022591807" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,7 @@
       <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="935" selection-end="935" vertical-scroll-proportion="0.42628774">
+            <state line="39" column="0" selection-start="1668" selection-end="1694" vertical-scroll-proportion="0.8525755">
               <folding />
             </state>
           </provider>
@@ -110,9 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter2/section6.md" />
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/intro.md" />
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section1.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section2.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section3.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section4.md" />
@@ -126,6 +124,9 @@
         <option value="$PROJECT_DIR$/installation/project-install.md" />
         <option value="$PROJECT_DIR$/installation/directory-structure.md" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/application/authentication.md" />
+        <option value="$PROJECT_DIR$/application/testing.md" />
+        <option value="$PROJECT_DIR$/application/routing.md" />
       </list>
     </option>
   </component>
@@ -179,6 +180,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -206,14 +221,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27045456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27045456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -289,41 +304,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/intro.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="352" selection-end="352" vertical-scroll-proportion="0.29307282" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section9.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="301" column="0" selection-start="11713" selection-end="11713" vertical-scroll-proportion="0.8401421" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clipboard.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/project-install.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="23" selection-end="23" vertical-scroll-proportion="0.026041666" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/directories.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/installation/integration.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/overview/why-use.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter1/section1.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -372,9 +352,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/authentication.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="52" selection-end="52" vertical-scroll-proportion="0.026041666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/testing.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/dia-abstract-object.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/class-loading.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="9" selection-start="9" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/dynamic-methods.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="24" selection-start="9" selection-end="24" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/api-classes.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="935" selection-end="935" vertical-scroll-proportion="0.42628774">
+        <state line="39" column="0" selection-start="1668" selection-end="1694" vertical-scroll-proportion="0.8525755">
           <folding />
         </state>
       </provider>

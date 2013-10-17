@@ -1,4 +1,5 @@
-# Core > API Classes
+Application Class Features > API Classes
+---
 
 ## Overview
 

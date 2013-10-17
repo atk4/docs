@@ -1,4 +1,5 @@
-# Core > Configuration
+Application Class Features > Configuration
+---
 
 ## The Core Config Files
 
@@ -14,16 +15,16 @@ In line with our design goal of simplicity, Agile Toolkit uses a PHP array for s
 
 Agile Toolkit makes extensive use of default values, so you need very few settings to configure a working application. This is just a sample &ndash; you should add settings as you require.
 
-$config['dsn']='mysql://user:secret@localhost/my_db';
+    $config['dsn']='mysql://user:secret@localhost/my_db';
 
-$config['sample']['setting'] = 20;
+    $config['sample']['setting'] = 20;
 
-$config['billing']['realex']['merchantid'] = 'agile';
-$config['billing']['realex']['account'] = 'internet';
-$config['billing']['realex']['secret'] = 'xLmpVrtzYu';
+    $config['billing']['realex']['merchantid'] = 'agile';
+    $config['billing']['realex']['account'] = 'internet';
+    $config['billing']['realex']['secret'] = 'xLmpVrtzYu';
 
-$config['logger']['log_output'] = 'full';
-$config['logger']['log_dir'] = 'logs';
+    $config['logger']['log_output'] = 'full';
+    $config['logger']['log_dir'] = 'logs';
 
 ## Using Config Values
 

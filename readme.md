@@ -41,19 +41,15 @@ Application Class Features
 ----
 One object is always mandatory for your application - Application Class.
 
-<!-- GEOFF, we have 2 links to application overview, here and above under Overview section -->
-
- * Application Class Overview
- * [Pages - Request Routing](application/routing.md)
- * Configuration File Use
- * Database Connectivity
- * User Authentication
- * Exception Handling
- * Unit and UI Tests
+ * [Application Class Overview](application/api-classes.md "Application Class Overview")
+ * [Pages - Request Routing](application/pages-request-routing.md "Pages - Request Routing")
+ * [Configuration File Use](application/configuration.md "Configuration File Use")
+ * [User Authentication](application/authentication.md "User Authentication")
+ * [Unit and UI Tests](application/testing.md "Unit and UI Tests")
 
 Introduction to Controllers
 ----
- * Introduction to Controllers
+ * [Introduction to Controllers](controllers/introduction-to-controllers.md "Introduction to Controllers")
 
 Non-Relational Models
 ----
