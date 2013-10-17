@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installation/directory-structure.md" afterPath="$PROJECT_DIR$/installation/directory-structure.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installation/integration.md" afterPath="$PROJECT_DIR$/installation/integration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installation/project-install.md" afterPath="$PROJECT_DIR$/installation/project-install.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/hooks.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/event-hooks.md" afterPath="$PROJECT_DIR$/core/event-hooks.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +51,8 @@
     <file path="$PROJECT_DIR$/../JADSC/page/user/profile.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382007887216" ignored="false" />
     <file path="/profile.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005987357" ignored="false" />
     <file path="dbtable:/79164098/9834af79-bace-4bc3-b1ef-5cc2c4ab22d4/jadsc..user" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005387395" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/translations/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014260121" ignored="false" />
-    <file path="/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014260121" ignored="false" />
+    <file path="$PROJECT_DIR$/../JADSC/translations/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382015036607" ignored="false" />
+    <file path="/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382015036607" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/translations/en.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014263887" ignored="false" />
     <file path="/en.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014263887" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/lib/Frontend.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382013003248" ignored="false" />
@@ -187,7 +184,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="installation" />
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -218,14 +229,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27045456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27045456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
