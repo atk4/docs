@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/apis.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/authentication.md" afterPath="$PROJECT_DIR$/application/authentication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/configuration.md" afterPath="$PROJECT_DIR$/application/configuration.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/testing.md" afterPath="$PROJECT_DIR$/application/testing.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/features/exception-handling.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/exception-handling.md" afterPath="$PROJECT_DIR$/core/exception-handling.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/namespaces-and-addons.md" afterPath="$PROJECT_DIR$/core/namespaces-and-addons.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,7 +85,7 @@
       <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="1668" selection-end="1694" vertical-scroll-proportion="0.8525755">
+            <state line="35" column="0" selection-start="1668" selection-end="1694" vertical-scroll-proportion="0.8525755">
               <folding />
             </state>
           </provider>
@@ -111,8 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section2.md" />
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section3.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section4.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section5.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section6.md" />
@@ -123,10 +119,12 @@
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/section1.md" />
         <option value="$PROJECT_DIR$/installation/project-install.md" />
         <option value="$PROJECT_DIR$/installation/directory-structure.md" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/application/authentication.md" />
         <option value="$PROJECT_DIR$/application/testing.md" />
         <option value="$PROJECT_DIR$/application/routing.md" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/core/exception-handling.md" />
+        <option value="$PROJECT_DIR$/core/namespaces-and-addons.md" />
       </list>
     </option>
   </component>
@@ -190,7 +188,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="features" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,16 +316,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter1/section1.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter1/section4.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter1/section5.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.170515" />
@@ -392,9 +394,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/features/working-with-objects.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="26" selection-start="86" selection-end="86" vertical-scroll-proportion="0.07992895">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/exception-handling.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="4" selection-start="30" selection-end="30" vertical-scroll-proportion="0.026642984">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/namespaces-and-addons.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="1668" selection-end="1694" vertical-scroll-proportion="0.8525755">
+        <state line="35" column="0" selection-start="1668" selection-end="1694" vertical-scroll-proportion="0.8525755">
           <folding />
         </state>
       </provider>

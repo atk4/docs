@@ -1,4 +1,5 @@
-# Core > Exception Handling
+Core > Exception Handling
+----
 
 ## Using Exceptions In Agile Toolkit
 
