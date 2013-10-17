@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="" />
+    <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/exception-handling.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/core/pathfinder.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/exception-handling.md" afterPath="$PROJECT_DIR$/core/exception-handling.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/pathfinder-resource-manager.md" afterPath="$PROJECT_DIR$/core/pathfinder-resource-manager.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+    </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382007887216" ignored="false" />
@@ -48,14 +54,16 @@
     <file path="$PROJECT_DIR$/../JADSC/page/user/profile.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382007887216" ignored="false" />
     <file path="/profile.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005987357" ignored="false" />
     <file path="dbtable:/79164098/9834af79-bace-4bc3-b1ef-5cc2c4ab22d4/jadsc..user" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005387395" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/translations/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382015036607" ignored="false" />
+    <file path="$PROJECT_DIR$/../JADSC/translations/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382016163700" ignored="false" />
     <file path="/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382015036607" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/translations/en.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014263887" ignored="false" />
+    <file path="$PROJECT_DIR$/../JADSC/translations/en.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382016163700" ignored="false" />
     <file path="/en.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014263887" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/lib/Frontend.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382013003248" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/page/index.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382013003248" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/lib/View/PhotoSwitcher.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014167245" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/shared/Model/Image.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014167245" ignored="false" />
+    <file path="$PROJECT_DIR$/../JADSC/lib/Lister/Photos.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382019792176" ignored="false" />
+    <file path="/Photos.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382019765131" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +86,7 @@
       <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="0" selection-start="877" selection-end="877" vertical-scroll-proportion="0.42628774">
+            <state line="22" column="0" selection-start="935" selection-end="935" vertical-scroll-proportion="0.42628774">
               <folding />
             </state>
           </provider>
@@ -116,8 +124,8 @@
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/intro.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/section1.md" />
         <option value="$PROJECT_DIR$/installation/project-install.md" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/installation/directory-structure.md" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -168,34 +176,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,11 +289,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2916666" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/intro.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="23" selection-start="352" selection-end="352" vertical-scroll-proportion="0.29307282" />
@@ -390,9 +365,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/extensions/composer-packagist.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="877" selection-end="877" vertical-scroll-proportion="0.42628774">
+        <state line="22" column="0" selection-start="935" selection-end="935" vertical-scroll-proportion="0.42628774">
           <folding />
         </state>
       </provider>

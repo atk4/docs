@@ -17,15 +17,15 @@ Agile Toolkit is a new kind of full-stack PHP framework focused on easing the de
 
 Installation
 ----
- * [Quick Start](installation/quick-start.md)
- * [Directory Structure](installation/directory-structure.md)
- * [Manual Installation](installation/manual-installation.md)
+ * [Quick Start](installation/quick-start.md "Quick Start")
+ * [Directory Structure](installation/directory-structure.md "Directory Structure")
+ * [Manual Installation](installation/manual-installation.md "Manual Installation")
 
 Agile Toolkit Extensions
 ----
- * Downloadable themes
- * Add-on Marketplace
- * Application Classes
+ * [Downloadable themes](extensions/downloadable-themes.md "Downloadable themes")
+ * [Add-on Marketplace](extensions/add-on-marketplace.md "Add-on Marketplace")
+ * [Application Classes](extensions/application-classes.md "Application Classes")
  
 Core Features of All Objects
 ----
@@ -35,6 +35,7 @@ All objects in Agile Toolkit descend from the same ancestor - AbstractObject whi
  * [Event Hooks](core/event-hooks.md)
  * [Namespaces and Add-ons](core/namespaces-and-addons.md)
  * [Pathfinder - Resource Manager](core/pathfinder.md)
+ * [Exception handling](core/exception-handling.md "Exception handling")
 
 Application Class Features
 ----
