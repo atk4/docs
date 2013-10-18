@@ -1,5 +1,5 @@
-
 Create your own view in 3 steps:
+---
 
 Step 1: Create a view class and place it in libs\View folder.
 
