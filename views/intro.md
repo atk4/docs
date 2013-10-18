@@ -34,5 +34,5 @@ Step 3: In your `html` template of the page add the view `spot` (meaning the pla
 
 
 See Links:
-
-    http://agiletoolkit.org/dox/html/class_abstract_object.html#a166878abcde3d0e82826ed3110c37c87
+ 
+ - add() : http://agiletoolkit.org/dox/html/class_abstract_object.html#a166878abcde3d0e82826ed3110c37c87
