@@ -65,7 +65,7 @@ Object Relational Manager (ORM)
 ----
  * [Dynamic SQL (DSQL)](object-relational-mapper/dsql.md "Dynamic SQL (DSQL)")
  * [Relational Models](object-relational-mapper/relational-models.md "Relational Models")
- * Expressions and Conditions
+ * [Expressions and Conditions](object-relational-mapper/expressions-and-conditions.md "Expressions and Conditions")
  * Joins and Traversing
  * Efficiency and Stability
  * Database Patterns

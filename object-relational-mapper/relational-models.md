@@ -1,4 +1,4 @@
-Object Relational Manager (ORM) > Relational Models
+# Object Relational Manager (ORM) > Relational Models
 ----
 The syntax of defining Relational Models is very similar to a regular models. There are however few differences:
 

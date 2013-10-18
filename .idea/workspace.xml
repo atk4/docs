@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="" />
+    <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/non-relational-models/field-properties.md" afterPath="$PROJECT_DIR$/non-relational-models/field-properties.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/object-relational-mapper/relational-models.md" afterPath="$PROJECT_DIR$/object-relational-mapper/relational-models.md" />
+    </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382035713785" ignored="false" />
+    <file path="/Dummy.txt" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382111339884" ignored="false" />
     <file path="/readme.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379963934317" ignored="false" />
     <file path="/section2.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379965014941" ignored="false" />
     <file path="/intro.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379966230170" ignored="false" />
@@ -32,7 +36,7 @@
     <file path="/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251525347" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005331874" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/admin/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251859115" ignored="false" />
-    <file path="/a.dummy" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382043196416" ignored="false" />
+    <file path="/a.dummy" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115212171" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/public/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251200160" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/admin/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251853460" ignored="false" />
     <file path="$PROJECT_DIR$/../ansa/wp-content/themes/ansa/single-default.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316312232" ignored="false" />
@@ -61,15 +65,40 @@
     <file path="/authentication.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382022591807" ignored="false" />
     <file path="$PROJECT_DIR$/../hg01/cron/atk4/lib/Lister.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382035714506" ignored="false" />
     <file path="$PROJECT_DIR$/../hg01/shared/Model/User.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382035736803" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/page/motions/add.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382091500649" ignored="false" />
-    <file path="/add.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382091401727" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/page/motions/add.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382104422686" ignored="false" />
+    <file path="/add.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382104417366" ignored="false" />
     <file path="$PROJECT_DIR$/../hg01/page/motions/add/addVideo.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382086843910" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/cron/lib/CronApi.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382087920487" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/cron/lib/CronApi.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382108575888" ignored="false" />
     <file path="$PROJECT_DIR$/../hg01/admin/config-options.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382087946949" ignored="false" />
     <file path="$PROJECT_DIR$/../hg01/templates/default/view/add_tags.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382090197833" ignored="false" />
     <file path="/add_tags.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382088284306" ignored="false" />
     <file path="$PROJECT_DIR$/../hg01/templates/default/page/addMotion.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382090171781" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/lib/Frontend.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382088871405" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/lib/Frontend.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382104496901" ignored="false" />
+    <file path="/relational-models.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382097758223" ignored="false" />
+    <file path="/field-properties.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382097770773" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382101181571" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/shared/Model/Motion/Core.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382101265824" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/lib/View/Motion/Top.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382101515014" ignored="false" />
+    <file path="/Top.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382101511879" ignored="false" />
+    <file path="/CronApi.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382108454557" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/templates/thevillagesite2/view/menu/desktop_menu.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382111403967" ignored="false" />
+    <file path="/desktop_menu.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382111364271" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/lib/View/DesktopMenu.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382111476844" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/lib/View/Header.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382113170346" ignored="false" />
+    <file path="/Header.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382112681749" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/lib/Form/Search.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382112809377" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/templates/thevillagesite2/view/menu/header.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382116232219" ignored="false" />
+    <file path="/header.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382113046834" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/page/program/tvsdebates.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382113142634" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/lib/Footer.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382116358618" ignored="false" />
+    <file path="/Footer.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115542019" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/templates/thevillagesite2/view/footer.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115441245" ignored="false" />
+    <file path="/footer.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115400719" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/page/privacy_policy.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115203420" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/page/termsofuse.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115778132" ignored="false" />
+    <file path="/help.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115843682" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/page/help.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115846898" ignored="false" />
+    <file path="$PROJECT_DIR$/../tvsdev/page/market.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382116196289" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,19 +118,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+            <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.3197158">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="overview.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/object-relational-mapper/overview.md">
+      <file leaf-file-name="field-properties.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/non-relational-models/field-properties.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="38" selection-start="1408" selection-end="1409" vertical-scroll-proportion="0.6394316">
+            <state line="3" column="16" selection-start="56" selection-end="57" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,8 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section7.md" />
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section8.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section9.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/intro.md" />
         <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/section1.md" />
@@ -139,8 +166,10 @@
         <option value="$PROJECT_DIR$/core/namespaces-and-addons.md" />
         <option value="$PROJECT_DIR$/non-relational-models/introduction-to-model.md" />
         <option value="$PROJECT_DIR$/application/multiple-interfaces.md" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/object-relational-mapper/dsql.md" />
+        <option value="$PROJECT_DIR$/object-relational-mapper/relational-models.md" />
+        <option value="$PROJECT_DIR$/non-relational-models/field-properties.md" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -205,6 +234,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="object-relational-mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="docs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="non-relational-models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -324,34 +367,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tutorial/day1.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/non-relational-models/field-properties.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/introduction-to-controllers.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/api-classes.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="58" selection-start="260" selection-end="261" vertical-scroll-proportion="0.18650089">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/installation/project-install.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -415,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.026642984">
@@ -429,9 +437,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/object-relational-mapper/relational-models.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="2" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/conditions-and-traversing.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/database-connectivity.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/overview.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="38" selection-start="1408" selection-end="1409" vertical-scroll-proportion="0.6394316">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/field-properties.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="16" selection-start="56" selection-end="57" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.3197158">
           <folding />
         </state>
       </provider>
