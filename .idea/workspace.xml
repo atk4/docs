@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/agile-orm/basic-concepts.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/agile-orm/overview.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/agile-orm/validation.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/basic-usage.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/defining-queries.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/extending.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/overview.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/dsql/running-queries.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/overview/overview.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project-organization/multiple-apps.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/project-organization/using-with-other-frameworks.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-    </list>
+    <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="" />
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382007887216" ignored="false" />
+    <file path="/Dummy.txt" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382035713785" ignored="false" />
     <file path="/readme.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379963934317" ignored="false" />
     <file path="/section2.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379965014941" ignored="false" />
     <file path="/intro.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379966230170" ignored="false" />
@@ -45,7 +32,7 @@
     <file path="/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251525347" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005331874" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/admin/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251859115" ignored="false" />
-    <file path="/a.dummy" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005563484" ignored="false" />
+    <file path="/a.dummy" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382043196416" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/public/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251200160" ignored="false" />
     <file path="$PROJECT_DIR$/../JADSC/admin/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251853460" ignored="false" />
     <file path="$PROJECT_DIR$/../ansa/wp-content/themes/ansa/single-default.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316312232" ignored="false" />
@@ -72,6 +59,17 @@
     <file path="$PROJECT_DIR$/../JADSC/lib/Lister/Photos.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382019792176" ignored="false" />
     <file path="/Photos.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382019765131" ignored="false" />
     <file path="/authentication.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382022591807" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/cron/atk4/lib/Lister.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382035714506" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/shared/Model/User.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382035736803" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/page/motions/add.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382091500649" ignored="false" />
+    <file path="/add.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382091401727" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/page/motions/add/addVideo.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382086843910" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/cron/lib/CronApi.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382087920487" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/admin/config-options.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382087946949" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/templates/default/view/add_tags.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382090197833" ignored="false" />
+    <file path="/add_tags.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382088284306" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/templates/default/page/addMotion.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382090171781" ignored="false" />
+    <file path="$PROJECT_DIR$/../hg01/lib/Frontend.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382088871405" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +89,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="readme.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.55950266">
+            <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overview.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/object-relational-mapper/overview.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="38" selection-start="1408" selection-end="1409" vertical-scroll-proportion="0.6394316">
               <folding />
             </state>
           </provider>
@@ -198,20 +205,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="object-relational-mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="non-relational-models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,6 +415,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.026642984">
@@ -431,14 +431,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/overview.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.55950266">
+        <state line="24" column="38" selection-start="1408" selection-end="1409" vertical-scroll-proportion="0.6394316">
           <folding />
         </state>
       </provider>
