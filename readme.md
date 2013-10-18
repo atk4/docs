@@ -66,14 +66,14 @@ Object Relational Manager (ORM)
  * [Dynamic SQL (DSQL)](object-relational-mapper/dsql.md "Dynamic SQL (DSQL)")
  * [Relational Models](object-relational-mapper/relational-models.md "Relational Models")
  * [Expressions and Conditions](object-relational-mapper/expressions-and-conditions.md "Expressions and Conditions")
- * Joins and Traversing
+ * [Joins and Traversing](object-relational-mapper/joins-and-traversing.md "Joins and Traversing")
  * Efficiency and Stability
  * Database Patterns
  * Filestore Add-on
  
 User Interface
 ----
- * Introduction to Views
+ * [Introduction to Views](user-interface/intro.md "Introduction to Views")
  * Template Engine (SMLite)
  * Object Tree and Rendering
  * Lister, Menu and Grid
