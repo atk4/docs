@@ -31,3 +31,8 @@ Step 2: Add this view into your page. (example `index.php`)
 Step 3: In your `html` template of the page add the view `spot` (meaning the place where this view will be displayed)
 
     <?$FREEQUOTE?>
+
+
+See Links:
+
+    http://agiletoolkit.org/dox/html/class_abstract_object.html#a166878abcde3d0e82826ed3110c37c87
