@@ -24,10 +24,10 @@ Example Code:
     }
 
 
-Step 2: Add this view into your page. 
+Step 2: Add this view into your page. (example `index.php`)
 
     $this->add("View_Freequote",null, "FREEQUOTE");
     
-Step 3: In your page add the view `spot` (meaning the place where this view will be displayed)
+Step 3: In your `html` template of page add the view `spot` (meaning the place where this view will be displayed)
 
     <?$FREEQUOTE?>
