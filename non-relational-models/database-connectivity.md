@@ -1,4 +1,4 @@
-# Database connection  
+# Non-Relational Models > Database connectivity
 
 Agile Toolkit relies on PHP/PDO to access database. As a result, multiple data-base vendors are supported, however they may vary in slight details. If your database is not supported, consider writing a simple driver, which will help Agile Toolkit generate certain types of queries. Luckily you already have drivers for MySQL, PostgreSQL and SQLite to look for. If you do develop your own driver, consider contributing it back to Agile Toolkit or make it available through an add-on.
 

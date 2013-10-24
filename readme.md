@@ -58,10 +58,10 @@ Non-Relational Models
 ----
  * [Introduction to Model](non-relational-models/introduction-to-model.md "Introduction to Model")
  * [Database Connectivity](non-relational-models/database-connectivity.md "Database Connectivity")
- * [Model Data Sources](non-relational-models/model-data-sources.md "Model Data Sources")
+ * Model Data Sources
  * [Field Properties](non-relational-models/field-properties.md "Field Properties")
  * [Model Hooks](non-relational-models/model-hooks.md "Model Hooks")
- * [Conditions and Traversing](non-relational-models/conditions-and-traversing.md "Conditions and Traversing")
+ * Conditions and Traversing
  
 Object Relational Manager (ORM)
 ----

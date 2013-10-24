@@ -1,4 +1,4 @@
-# DEFINING FIELD META-INFORMATION
+# Non-Relational Models > DEFINING FIELD META-INFORMATION
 ----
 
 Once `addField()` is called the field will be listed as one of the model's elements. You can access existing field or even destroy it through `$model->getElement('field');` Sometimes when you extend model, you would want to change certain attributes of a field.

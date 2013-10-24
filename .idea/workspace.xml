@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application-class-features/authentication.md" afterPath="$PROJECT_DIR$/application-class-features/authentication.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/non-relational-models/database-connectivity.md" afterPath="$PROJECT_DIR$/non-relational-models/database-connectivity.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/non-relational-models/field-properties.md" afterPath="$PROJECT_DIR$/non-relational-models/field-properties.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/non-relational-models/introduction-to-model.md" afterPath="$PROJECT_DIR$/non-relational-models/introduction-to-model.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/non-relational-models/model-data-sources.md" afterPath="$PROJECT_DIR$/non-relational-models/model-data-sources.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/non-relational-models/model-hooks.md" afterPath="$PROJECT_DIR$/non-relational-models/model-hooks.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,9 +56,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter3/section9.md" />
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/intro.md" />
-        <option value="$PROJECT_DIR$/web_development_with_agile_toolkit/chapter4/section1.md" />
         <option value="$PROJECT_DIR$/installation/project-install.md" />
         <option value="$PROJECT_DIR$/installation/directory-structure.md" />
         <option value="$PROJECT_DIR$/application/authentication.md" />
@@ -63,12 +63,15 @@
         <option value="$PROJECT_DIR$/application/routing.md" />
         <option value="$PROJECT_DIR$/core/exception-handling.md" />
         <option value="$PROJECT_DIR$/core/namespaces-and-addons.md" />
-        <option value="$PROJECT_DIR$/non-relational-models/introduction-to-model.md" />
         <option value="$PROJECT_DIR$/application/multiple-interfaces.md" />
         <option value="$PROJECT_DIR$/object-relational-mapper/dsql.md" />
         <option value="$PROJECT_DIR$/object-relational-mapper/relational-models.md" />
-        <option value="$PROJECT_DIR$/non-relational-models/field-properties.md" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/non-relational-models/introduction-to-model.md" />
+        <option value="$PROJECT_DIR$/non-relational-models/field-properties.md" />
+        <option value="$PROJECT_DIR$/non-relational-models/database-connectivity.md" />
+        <option value="$PROJECT_DIR$/non-relational-models/model-data-sources.md" />
+        <option value="$PROJECT_DIR$/non-relational-models/model-hooks.md" />
       </list>
     </option>
   </component>
@@ -134,7 +137,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="non-php-components" />
+              <option name="myItemId" value="non-relational-models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,36 +288,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.026642984" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/non-relational-models/conditions-and-traversing.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/non-relational-models/database-connectivity.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/object-relational-mapper/overview.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="1408" selection-end="1409" vertical-scroll-proportion="0.6394316" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/non-relational-models/field-properties.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="56" selection-end="57" vertical-scroll-proportion="0.07992895" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/object-relational-mapper/relational-models.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.7193606" vertical-offset="0" max-vertical-offset="0" />
@@ -372,6 +345,48 @@
     <entry file="file://$PROJECT_DIR$/agile-toolkit-extensions/application-classes.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/conditions-and-traversing.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/introduction-to-model.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/field-properties.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1134">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/model-hooks.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/model-data-sources.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-relational-models/database-connectivity.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="44" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
           <folding />
         </state>
       </provider>
