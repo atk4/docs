@@ -23,34 +23,34 @@ Installation
 
 Agile Toolkit Extensions
 ----
- * [Downloadable themes](extensions/downloadable-themes.md "Downloadable themes")
- * [Add-on Marketplace](extensions/add-on-marketplace.md "Add-on Marketplace")
- * [Application Classes](extensions/application-classes.md "Application Classes")
+ * [Downloadable themes](agile-toolkit-extensions/downloadable-themes.md "Downloadable themes")
+ * [Add-on Marketplace](agile-toolkit-extensions/add-on-marketplace.md "Add-on Marketplace")
+ * [Application Classes](agile-toolkit-extensions/application-classes.md "Application Classes")
  
 Core Features of All Objects
 ----
 All objects in Agile Toolkit descend from the same ancestor - AbstractObject which provides a range of features you can do with any object.
 
- * [Working with Objects](core/working-with-objects.md "Working with Objects")
+ * [Working with Objects](core-features-of-all-objects/working-with-objects.md "Working with Objects")
  * [Event Hooks](core/event-hooks.md "Event Hooks")
- * [Namespaces and Add-ons](core/namespaces-and-addons.md "Namespaces and Add-ons")
- * [Pathfinder - Resource Manager](core/pathfinder.md "Pathfinder - Resource Manager")
- * [Exception handling](core/exception-handling.md "Exception handling")
+ * [Namespaces and Add-ons](core-features-of-all-objects/namespaces-and-addons.md "Namespaces and Add-ons")
+ * [Pathfinder - Resource Manager](core-features-of-all-objects/pathfinder.md "Pathfinder - Resource Manager")
+ * [Exception handling](core-features-of-all-objects/exception-handling.md "Exception handling")
 
 Application Class Features
 ----
 One object is always mandatory for your application - Application Class.
 
- * [Application Class Overview](application/api-classes.md "Application Class Overview")
- * [Pages - Request Routing](application/pages-request-routing.md "Pages - Request Routing")
- * [Configuration File Use](application/configuration.md "Configuration File Use")
- * [User Authentication](application/authentication.md "User Authentication")
- * [Multiple Interfaces](application/multiple-interfaces.md "Multiple Interfaces")
- * [Unit and UI Tests](application/testing.md "Unit and UI Tests")
+ * [Application Class Overview](application-class-features/api-classes.md "Application Class Overview")
+ * [Pages - Request Routing](application-class-features/pages-request-routing.md "Pages - Request Routing")
+ * [Configuration File Use](application-class-features/configuration.md "Configuration File Use")
+ * [User Authentication](application-class-features/authentication.md "User Authentication")
+ * [Multiple Interfaces](application-class-features/multiple-interfaces.md "Multiple Interfaces")
+ * [Unit and UI Tests](application-class-features/testing.md "Unit and UI Tests")
 
 Introduction to Controllers
 ----
- * [Introduction to Controllers](controllers/introduction-to-controllers.md "Introduction to Controllers")
+ * [Introduction to Controllers](introduction-to-controllers/introduction-to-controllers.md "Introduction to Controllers")
 
 Non-Relational Models
 ----

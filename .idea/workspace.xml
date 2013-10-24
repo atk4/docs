@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/api-classes.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/authentication.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/class-loading.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/configuration.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/dia-abstract-object.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/dynamic-methods.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/multiple-interfaces.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/pages-request-routing.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/application.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/assets.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/parsing.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/patternrouter.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/routing-flow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/routing.graffle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/sticky.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/url-components.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/routing/url.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/testing.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/introduction-to-controllers.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/event-hooks.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/exception-handling.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/namespaces-and-addons.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/pathfinder-resource-manager.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/core/working-with-objects.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="" />
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
