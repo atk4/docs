@@ -77,7 +77,7 @@ User Interface
  * [Template Engine (SMLite)](user-interface/template-engine.md "Template Engine (SMLite)")
  * Object Tree and Rendering
  * [Lister, Menu and Grid](user-interface/lister-menu-and-grid.md "Lister, Menu and Grid")
- * Form, Filter, QuickSearch
+ * [Form, Filter, QuickSearch](user-interface/form-filter-quicksearch.md "Form, Filter, QuickSearch")
  * Composite Views, CRUD
  
 Non-PHP Components
