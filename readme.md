@@ -34,9 +34,9 @@ Core Features of All Objects
 All objects in Agile Toolkit descend from the same ancestor - AbstractObject which provides a range of features you can do with any object.
 
  * [Working with Objects](core-features-of-all-objects/working-with-objects.md "Working with Objects")
- * [Event Hooks](core/event-hooks.md "Event Hooks")
+ * Event Hooks
  * [Namespaces and Add-ons](core-features-of-all-objects/namespaces-and-addons.md "Namespaces and Add-ons")
- * [Pathfinder - Resource Manager](core-features-of-all-objects/pathfinder.md "Pathfinder - Resource Manager")
+ * [Pathfinder - Resource Manager](core-features-of-all-objects/pathfinder-resource-manager.md "Pathfinder - Resource Manager")
  * [Exception handling](core-features-of-all-objects/exception-handling.md "Exception handling")
 
 Application Class Features
@@ -48,7 +48,7 @@ One object is always mandatory for your application - Application Class.
  * [Configuration File Use](application-class-features/configuration.md "Configuration File Use")
  * [User Authentication](application-class-features/authentication.md "User Authentication")
  * [Multiple Interfaces](application-class-features/multiple-interfaces.md "Multiple Interfaces")
- * [Unit and UI Tests](application-class-features/testing.md "Unit and UI Tests")
+ * Unit and UI Tests
 
 Introduction to Controllers
 ----

@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/agile-toolkit-extensions/composer-packagist.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/installation/composer-installation.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/installation/database-connection.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/installation/directories.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/installation/directory-structure.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/installation/project-install.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/non-relational-models/database-connectivity.md" afterPath="$PROJECT_DIR$/non-relational-models/database-connectivity.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installation/manual-installation.md" afterPath="$PROJECT_DIR$/installation/manual-installation.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/installation/quick-start.md" afterPath="$PROJECT_DIR$/installation/quick-start.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application-class-features/authentication.md" afterPath="$PROJECT_DIR$/application-class-features/authentication.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="docs.iws" />
@@ -33,7 +25,17 @@
     <favorites_list name="docs" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="css-less-framework.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/non-php-components/css-less-framework.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="20" selection-start="1046" selection-end="1047" vertical-scroll-proportion="0.40275386" vertical-offset="378" max-vertical-offset="2376">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -132,7 +134,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="agile-toolkit-extensions" />
+              <option name="myItemId" value="non-php-components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -248,7 +250,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -256,7 +258,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27013177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27013177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -283,11 +285,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/extending.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.026642984" vertical-offset="0" max-vertical-offset="0" />
@@ -375,6 +372,13 @@
     <entry file="file://$PROJECT_DIR$/agile-toolkit-extensions/application-classes.md">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/non-php-components/css-less-framework.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="20" selection-start="1046" selection-end="1047" vertical-scroll-proportion="0.40275386" vertical-offset="378" max-vertical-offset="2376">
           <folding />
         </state>
       </provider>
