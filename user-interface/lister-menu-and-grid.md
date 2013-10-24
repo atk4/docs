@@ -1,5 +1,74 @@
-Grid Overview
-====
+# User Interface > Lister, Menu and Grid
+----
+
+##Lister Overview
+----
+
+Object for displaying simple lists of items. Lister is commonly used with model to list all matching entries by using your own template.
+
+### USE OF LISTER
+
+Lister probably is one of the fundamental and simplest objects in Agile Toolkit. It lays foundation to a more sophisticated classes such as CompleteLister , Grid and therefore contributes towards CRUDs and other objects.
+
+    $page->add('Lister')
+      ->setSource(array('One','Two','Three'));
+You must strongly consider using setModel before using any other source type.
+
+### USE WITH MODEL
+    $page->add('Lister')
+      ->setModel('User');
+Lister will automatically check what keys you've got in the template and will automatically configure your model to select those fields (actual fields) to speed up calculation.
+
+#### USING WITH ASSOCIATIVE ARRAYS
+    $page->add('Lister')
+        ->setSource(array(
+            5=>'John',
+            7=>'Steve'
+    ));
+The key becomes the value for "id" field and value becomes "name"
+
+#### USING WITH ARRAY OF HASHES
+    $page->add('Lister')
+        ->setSource(array(
+          array('id'=>5,'name'=>'John'),
+          array('id'=>7,'name'=>'Steve'),
+    ));
+Natuarlly you are not limited only to those fields. You may specify any set of fields.
+
+#### USING WITH ITERATOR
+    $page->add('Lister')
+        ->setSource(new DirectoryIterator('.'));
+Any iterator may be used. If iterator returns array, it will be populated into the fields. Otherwise you need to redefine `formatRow()` function and read `$this->current_row` value which was returned from the iterator.
+
+### COMPLETELISTER
+
+CompleteLister class extends the functionality of default lister by allowing it to have a more comprehensive template. If default Lister will repeat it's own template as many times as necessary, CompleteLister will look for tag "row" cache it and will render it into "rows" tag after emptying it's contents. Here is a sample template for CompleteLister:
+
+    <?MyLister?>
+    <ul>
+      <?rows?>
+      <?row?>
+        <li><?name?>John Smith<?/?></li>
+      <?/?>
+        <li>Peter Oink</li>
+        <li>Steven Jobs</li>
+      <?/rows?>
+    </ul>
+    <?/MyLister?>
+With this template, it's possible to preserve the existing HTML too. CompleteLister will clone template inside "row" and then delete contents of "rows" region, therefore Peter and Steven entries will be simply deleted. John's entry will be re-used but the "name" tag will be populated from the model.
+
+In terms of data sources, CompleteLister can use all the same sources as Lister does.
+
+It might be a good idea for you to extend CompleteLister into your own classes such as "ClientLister" or "OrderLister" which will perform necessary formatting or other tweaks. CompleteLister is also a view therefore you can add tags around "rows" tags and set them explicitly.
+
+##Menu Overview
+----
+
+TODO
+
+##Grid Overview
+----
+
 This document is a tutorial for a basic use of Grid.
 
 What is Grid?
@@ -36,19 +105,19 @@ As a result, several behaviors are observed:
  
  - Grid automatically selects all `visible` fields of the model. 
  - When using `setModel()` you can override list of field and order in which they are displayed.
- - Automatically assigns appropriate formatters for your fields
+ - Automatically assigns appropriate formatters for your fields.
  - `addPaginator` integrates `Paginator` which breaks results into pages with defined number of rows.
  - `addQuicksearch` adds `QuickSerarch` form in the corner for filtering result by one of the specified columns or using model's custom `like()` function.
  - Allows you to use custom `Iterator` with `setModel` but you would need to call `addColumn` manually.
  - `addFormatter` can use multiple formatters per field, e.g. "money" and "nowrap".
  - Scalable: grid does not create object or perform queries on every row.
  - automatically keeps up `totals` which can be appended as yet another row at the bottom of grid.
- - `sortable` grids automatically get sorting control
+ - `sortable` grids automatically get sorting control.
  - `addButton` is a wrapper for adding buttons into button set on top of grid.
- - handles situations with no records
- - Change TD-styling with `setTDParam`
- - Support for Column add-ons
- - integrates with `selectable` and `ui.atk4_checkboxes` with `addSelectable`
+ - handles situations with no records.
+ - Change TD-styling with `setTDParam`.
+ - Support for Column add-ons.
+ - integrates with `selectable` and `ui.atk4_checkboxes` with `addSelectable`.
  
  
 Obviously Grid inherits all the features of the View as well as you can manipulate `$grid->model` in any way model can be manipulated making it possible to change styling, positioning, size and rendering of a grid, conditions, order or other properties of a select query.
@@ -85,4 +154,3 @@ Formatter needs to be defined as a method of a grid.
     }
     $grid=$this->add('MyGrid');
     $grid->addColumn('smiley','my field');
-    

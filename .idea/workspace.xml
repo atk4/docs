@@ -2,101 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/grid/advanced.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/grid/basic.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/grid/grid1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/grid/grid2-zebra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ui/grid/overview.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.md" afterPath="$PROJECT_DIR$/readme.md" />
     </list>
     <ignored path="docs.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382111339884" ignored="false" />
-    <file path="/readme.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379963934317" ignored="false" />
-    <file path="/section2.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379965014941" ignored="false" />
-    <file path="/intro.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379966230170" ignored="false" />
-    <file path="/section3.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379965087186" ignored="false" />
-    <file path="/section7.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379965194193" ignored="false" />
-    <file path="/section1.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379966215070" ignored="false" />
-    <file path="/section5.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379966410624" ignored="false" />
-    <file path="/section6.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1379966404143" ignored="false" />
-    <file path="/directory-structure.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380788408721" ignored="false" />
-    <file path="/project-install.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380788564856" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380799449292" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380799248737" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/admin/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380799466585" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/admin/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380799477097" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/reports/events/info.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380815741862" ignored="false" />
-    <file path="/info.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380815583789" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/reports/community/info.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380816089246" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/reports/issues/info.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380816348404" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/reports/projects/info.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380816360071" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/reports/property/info.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380816558928" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/shared/Model/User.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380817714358" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/admin/page/user.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380818167941" ignored="false" />
-    <file path="/user.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1380818167941" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381247912443" ignored="false" />
-    <file path="/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251525347" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005331874" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/admin/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251859115" ignored="false" />
-    <file path="/a.dummy" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115212171" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/public/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251200160" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/admin/.htaccess" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381251853460" ignored="false" />
-    <file path="$PROJECT_DIR$/../ansa/wp-content/themes/ansa/single-default.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316312232" ignored="false" />
-    <file path="/single-default.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316283415" ignored="false" />
-    <file path="$PROJECT_DIR$/../ansa/wp-content/themes/ansa/page-video-gallery.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316457534" ignored="false" />
-    <file path="/page-video-gallery.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316457534" ignored="false" />
-    <file path="$PROJECT_DIR$/../ansa/wp-content/themes/ansa/style.less" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316673281" ignored="false" />
-    <file path="/style.less" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316671410" ignored="false" />
-    <file path="$PROJECT_DIR$/../ansa/wp-content/themes/ansa/style.css" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1381316675135" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/lib/NLister.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382004163886" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/atk4/lib/Lister.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382003968569" ignored="false" />
-    <file path="/Lister.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382003395866" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/page/user/profile.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382007887216" ignored="false" />
-    <file path="/profile.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005987357" ignored="false" />
-    <file path="dbtable:/79164098/9834af79-bace-4bc3-b1ef-5cc2c4ab22d4/jadsc..user" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382005387395" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/translations/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382016163700" ignored="false" />
-    <file path="/ru.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382015036607" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/translations/en.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382016163700" ignored="false" />
-    <file path="/en.yml" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014263887" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/lib/Frontend.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382013003248" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/page/index.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382013003248" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/lib/View/PhotoSwitcher.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014167245" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/shared/Model/Image.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382014167245" ignored="false" />
-    <file path="$PROJECT_DIR$/../JADSC/lib/Lister/Photos.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382019792176" ignored="false" />
-    <file path="/Photos.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382019765131" ignored="false" />
-    <file path="/authentication.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382022591807" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/cron/atk4/lib/Lister.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382035714506" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/shared/Model/User.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382035736803" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/page/motions/add.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382104422686" ignored="false" />
-    <file path="/add.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382104417366" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/page/motions/add/addVideo.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382086843910" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/cron/lib/CronApi.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382108575888" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/admin/config-options.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382087946949" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/templates/default/view/add_tags.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382090197833" ignored="false" />
-    <file path="/add_tags.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382088284306" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/templates/default/page/addMotion.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382090171781" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/lib/Frontend.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382104496901" ignored="false" />
-    <file path="/relational-models.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382097758223" ignored="false" />
-    <file path="/field-properties.md" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382097770773" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/config.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382101181571" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/shared/Model/Motion/Core.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382101265824" ignored="false" />
-    <file path="$PROJECT_DIR$/../hg01/lib/View/Motion/Top.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382101515014" ignored="false" />
-    <file path="/Top.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382101511879" ignored="false" />
-    <file path="/CronApi.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382108454557" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/templates/thevillagesite2/view/menu/desktop_menu.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382111403967" ignored="false" />
-    <file path="/desktop_menu.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382111364271" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/lib/View/DesktopMenu.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382111476844" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/lib/View/Header.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382113170346" ignored="false" />
-    <file path="/Header.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382112681749" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/lib/Form/Search.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382112809377" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/templates/thevillagesite2/view/menu/header.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382116232219" ignored="false" />
-    <file path="/header.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382113046834" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/program/tvsdebates.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382113142634" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/lib/Footer.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382116358618" ignored="false" />
-    <file path="/Footer.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115542019" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/templates/thevillagesite2/view/footer.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115441245" ignored="false" />
-    <file path="/footer.html" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115400719" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/privacy_policy.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115203420" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/termsofuse.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115778132" ignored="false" />
-    <file path="/help.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115843682" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/help.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382115846898" ignored="false" />
-    <file path="$PROJECT_DIR$/../tvsdev/page/market.php" changelist="3ab3f1e9-930f-4067-8148-f1dd0c3da8ba" time="1382116196289" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,6 +67,7 @@
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="25" />
@@ -184,6 +100,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,23 +119,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="object-relational-mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,8 +128,75 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="options.lastSelected" value="reference.webide.settings.project.settings.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JADSC" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="0d7db73d-6fc6-4545-aaeb-3b528184f7ef">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="228edf0a-c154-4180-a921-7f39b7cc5a43">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="4aa2653c-2067-4a5c-882e-339958bbb9c1">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="5abfc0b6-cdee-419b-af44-3a00a3ac2d2c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="9dda1e8d-1226-40ce-9bc1-b69782041bbc">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="ae925563-4b2a-4eb3-8f40-62ab60595eee">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="c8eb6ae8-f3c7-4843-94e4-2292e8837a35">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="cb49fb43-7414-49f4-b3c3-590ae378a775">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="f89c949d-6406-4782-8073-8336af351511">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -236,6 +205,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -248,15 +230,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1368" height="744" extended-state="6" />
+    <frame x="-1" y="25" width="1368" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27045456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27013177" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -275,171 +258,96 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/installation/project-install.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/dynamic-methods.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="9" selection-end="24" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/pages-request-routing.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/multiple-interfaces.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/installation/integration.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="23" selection-end="23" vertical-scroll-proportion="0.052083332">
-          <folding />
-        </state>
+        <state line="2" column="8" selection-start="23" selection-end="23" vertical-scroll-proportion="0.052083332" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/basic-usage.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/defining-queries.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/running-queries.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql/extending.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/dsql.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.026642984">
-          <folding />
-        </state>
+        <state line="1" column="4" selection-start="36" selection-end="36" vertical-scroll-proportion="0.026642984" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/non-relational-models/conditions-and-traversing.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/non-relational-models/database-connectivity.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/overview.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="38" selection-start="1408" selection-end="1409" vertical-scroll-proportion="0.6394316">
-          <folding />
-        </state>
+        <state line="24" column="38" selection-start="1408" selection-end="1409" vertical-scroll-proportion="0.6394316" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/non-relational-models/field-properties.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="16" selection-start="56" selection-end="57" vertical-scroll-proportion="0.07992895">
-          <folding />
-        </state>
+        <state line="3" column="16" selection-start="56" selection-end="57" vertical-scroll-proportion="0.07992895" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/object-relational-mapper/relational-models.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="35" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.7193606">
+        <state line="23" column="16" selection-start="1058" selection-end="1058" vertical-scroll-proportion="-0.7193606" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/grid/overview.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="0" selection-start="4737" selection-end="4737" vertical-scroll-proportion="0.1858864" vertical-offset="918" max-vertical-offset="1674">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/grid/advanced.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ui/grid/basic.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="108">
           <folding />
         </state>
       </provider>
