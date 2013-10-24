@@ -1,5 +1,11 @@
 ## Handling form submission
 
+Application supports number of hooks such as `post-init` or `pre-render`. By adding your handlers there, you can execute certain things between the two major execution steps.
+
+There is one more step in between - form submission. It is used as a call-back into a standard `Form` class. Forms want to parse POST data after they have been fully initialized but before they start rendering.
+
+Forms use unique IDs to determine if they have been submitted, so even if you have multiple forms on the page, they will be able to determine which one have been submitted without your help.
+
 Forms are always submitted to the same page where they were added on. This is default and recommended approach for any web software. By doing this, you can perform validations in the same place, in the same file reducing the risk of human error of not doing any logical validation before showing the form.
 
 Additionally — form will be fully aware of the data it will be receiving, so instead of reading form data from `$_POST`, you can get the same data from the form object.
