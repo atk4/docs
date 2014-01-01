@@ -1,74 +1,116 @@
-# Overview > Design Principles
+# Overview > Design Goals
 
 ## A Fresh Approach To Framework Design
 
-New benefits require new approaches. The patterns we use in Agile Toolkit are widely used in desktop frameworks, but may be unfamiliar to web developers.
+Agile Toolkit does not inherit patterns from other web frameworks. Instead it takes a fresh look at Web Development and applies some principles from desktop frameworks.
 
-You'll find Agile Toolkit easier to learn if you understand the five key principles that have driven its design:
+You'll find Agile Toolkit easier to learn if you understand our fundamental principles first. Your knowledge of other web frameworks might hold you back or prevent you from understanding Agile Toolkit - it's advisable that you temporarily (or permanently) forget those.
 
-* The Abstraction Principle
-* The Composability Principle
-* The Extensibility Principle
-* The Testability Principle
-* The Simplicity Principle
+The key principles to Agile Toolkit are:
 
-## The Abstraction Principle
+* Simple - Make things simpler
+* Advanced - Go advanced without refactoring
+* Compose - Build anything out of smaller components
+* Inherit - Use Object Oriented Programming extensively
+* Agile - Be Agile Methodology-friendly
 
-We abstract all the technologies of the client-side and the server-side behind a consistent PHP interface. You lay out your data entry system, define UI behaviour and handle client-side events using PHP on the server.
+## Make Things Simpler
 
-![Web Development Levels of Abstraction](dia-levels-of-abstraction.png)
+![Make Simpler Principle](design/simple-principle.png)
 
-Years of experience with over 100 demanding Agile projects has proven that this radical level of abstraction shortens the learning curve, simplifies development and eases testing.
+Agile Toolkit is really simple. It's more simple then using NO frameworks at all. Our focus is to make complex processes simple and accessible. We also focus on etiquette of the code, to make your source code look concise and readable.
 
-## The Composability Principle
+**Agile Toolkit will always offer you a simple way to get things done.**
 
-The Toolkit is designed from the ground up to help developers compose reusable View components from smaller subcomponents. Powerful and flexible components speed development and increase reliability, and it's [Composability](http://en.wikipedia.org/wiki/Composability) that makes this possible.
+* User Interface Creation - make a form/field/widget with one line
+* User Interface Theming - change look and feel easily
+* 3rd party Add-ons - install in one click
+* Deploy to the cloud in few clicks (free hosting service)
+* Database access - perform database operation in one line
+* Routing - define pretty URL in one line
+* User Authentication - check user access with one line
+* Data Sources - switch between MySQL, Mongo, MemCache easily
+* Test Scripts - create test scripts with few lines of code
+* Relational SQL - use joins, expressions and sub-queries without headache
+* Performance - optimize your application for scalability
+* JavaScript - import 3rd party jQuery plugins with one line of code
+* AgileToolkit.org - get community help in one place
+* Commercial - priority support one click away
 
-Composability isn't restricted to View components &ndash; Models are composable too. So you can build complex queries from existing subqueries, expressions and field definitions.
+## Go Advanced
 
-Technically, Composability requires components that are independent, keep track of their own state and know how to cooperate with each other. Much of the design of Agile Toolkit is focused on offering these features transparently to every View and Model component, protecting the developer from the underlying complexities.
+![Go Advanced Principle](design/advanced-principle.png)
 
-With Agile Toolkit you can quickly develop a range of flexible business and interface components to meet the repeating requirements of your problem domain.
+Simplicity might get your application working in a record time, but just as important is the ability to customize, tweak and provide long-term support. Access to more advanced features is equally important.
 
-## The Extensibility Principle
+**Agile Toolkit will never sacrifice access to advanced functionality, should you need it.**
 
-Composability is only the first step to a truly agile web framework. In many ways the toughest challenge is adding functionality to your components as your application evolves.
+* Create your own widgets - write your own HTML
+* Add your custom CSS rules on top of the theme
+* Use Composer to customize add-on installation
+* Deploy to a custom / your own server (commercial feature)
+* Execute complex queries and vendor-specific database code
+* Implement your own routing controller
+* Customize authentication mechanism or use 3rd party auth
+* Use your own SQL queries, access Mongo's collection object
+* Run automated tests from scripts
+* Write your own JavaScript library and use it anywhere
 
-This is where you need [Extensibility](http://en.wikipedia.org/wiki/Extensibility) &ndash; the ability to add new functionality without breaking existing tested code.
 
-To achieve Composability our Model and View objects store their parameters and only render output at the last moment, once they know what other objects they're working with. So all their settings can be changed at any stage before they render. This means that extended components can reconfigure any aspect of the parent and its subcomponents.
+## Build out of Blocks
 
-And Agile Toolkit gives you additional ways to extend your objects:
+![Compose Principle](design/compose-principle.png)
 
-* Use call-backs (hooks) to inject event-aware code
-* Inject new methods into any object at runtime with `addMethod()` or even into all objects simultaniously (as PHP5.5 traits do for classes)
-* Replace standard classes with your own (so you can, for example, swap out the default `Grid` class in a `CRUD` View).
+Composition means creating a new object out of other objects like building blocks. Unlike giving you a one-fits-all solution, you'll have a lot of smaller components and with knowledge will be able to build unimaginable solutions yourself.
 
-The Extensibility features in Agile Toolkit add agility to your development process.
+### Composing UI
 
-## The Testability Principle
+The Toolkit uses this principle very strongly in user interface. Chunks of user interface can be combined out of smaller components to build more complex interfaces. Page consist of Views such as Form, CRUD or Menu. Each of those Views can combine more Views recursively and/or rely on HTML/JADE templates.
 
-Agile development relies on testing, and testability has been a key consideration in the Toolkit's design.
+### Composing Model Layer
 
-Our focus on Composability and Extensibility means that everything in the Toolkit is an object &ndash; there's no use of static classes. And as we've seen every parameter in every object can be configured at runtime. So any component can be reconfigured or swapped out for testing with no special planning or setup.  
+Data management also use composition. You can use modules to enhance the functionality of your Models. The basic implementation tries to minimize functionality but you can add controllers for soft delete, audit, disjoint subtypes, access control, nested data, recursive models and caching.
 
-Agile Toolkit is a software tester's dream! 
+### Composing Application
 
-## The Simplicity Principle
+Application itself consist of blocks. For example - your application will not have any authentication unless you add Auth controller. There are many other controllers to provide functionality you might expect from a framework.
 
-In addition to Abstraction and Composability our search for simplicity extends to the code itself. You'll find that the codebase is lean, the syntax is elegant and expressive, and the faff level is kept to a minimum. We prefer intuitive conventions to elaborate configuration. And we always adopt the simplest practical approach, even if it's not the 'purest' or trendiest. For example:
+We make sure that there is a wide selection of 3rd party components which you can use and combine together. Unlike other software solutions, add-ons give you many components and blocks you can re-use.
 
-* Configuration settings are plain old PHP hashes, so if you want complex conditional configurations at runtime just pop in some code.
-* You won't need namespacing when you're working with the Toolkit Core. This has never caused any practical problems and we avoid tedium like this:
+It is also important to note that ANY object may contain blocks even if it's not designed for it. Knowing that you can attempt to insert Button inside Field or Search field inside Menu with great success.
 
-    <pre><code>
-    namespace Acme\TaskBundle\Controller;
+## Object Oriented Programming
 
-    use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-    use Acme\TaskBundle\Entity\Task;
-    use Symfony\Component\HttpFoundation\Request;
-    </code></pre>
+![Inherit Principle](design/inherit-principle.png)
 
-* We use directories in the file system to define our routes without complex configuration conventions, just as HTTP intended.
+Often neglected in Web but consistently present in Desktop Frameworks - inheritance is strong with Agile Toolkit.
 
-You'll find this kind of pragmatic thinking throughout the codebase. With Agile Toolkit you can just get on with the job without the framework getting in the way.
+All the classes defined in Agile Toolkit are "open", methods are easy to re-define and override. The method names and arguments are preserved consistent throughout the releases giving your application required level of stability and a huge benefit of extensibility.
+
+The use of Object Oriented Pattern gives immense amount of utility for every single object:
+
+* to have children, where each is assigned unique name;
+* to support hooks, dynamic methods and simplified exceptions;
+* to support object destruction, session access, debug and warning facility;
+* AbstractView introduces "rendering" and templates;
+* AbstractView introduces JS event binding.
+
+Most of 3rd party code developed for Agile Toolkit will inherit base classes and will preserve all of the essential utility without no overheads. Yet this allows you as a developer not only use add-on as a whole, but use its models, views and other classes anywhere in your code.
+
+## Agile Methodology
+
+If you are fond of Agile Methodology for software development, you'll find that Agile Toolkit meets your coding style perfectly. There are several patterns enforced by a framework itself which makes your developers even more efficient:
+
+* Make your prototype quick, then tweak;
+* Separate Templates from Presentation Code and Business Code;
+* Minimum impact of refactoring - know exactly what areas are affected;
+* Generic Views - interface without bugs;
+* Working in teams - code consistently and safe;
+* Developers make mistakes - anticipate and prevent.
+
+### Agile Toolkit on testing
+
+* Modular testing - add your widgets on a separate test-pages for rendering/UI regression testing
+* Integrated Visual testing environment designed to reduce time necessary to write test scripts and make them more useful
+* Performance and memory impact testing
+* Visual and Scripted tests
