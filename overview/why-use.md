@@ -1,75 +1,77 @@
-# Overview > Why Use Agile Toolkit?
+# What is Agile Toolkit?
 
-## What Challenges Is Agile Toolkit Designed To Solve?
+Agile Toolkit is a PHP framework for development of Web Application. It is inspired by Mobile and Desktop frameworks, but the concept is used for building Native HTML applications. Agile Toolkit has a strong philosophy and is driven by the key 5 principles: Simple, Advanced, Composite, Inherited and Agile.
 
-Agile Toolkit is a new kind of full-stack PHP framework focused on easing the development of rich-client AJAX applications. 
+In terms of features - Using Agile Toolkit will offer you a consistent HTML/CSS-based interface out of the box, objects for UI widgets, Data Modeling tools, support for relational and NoSQL data storages with minimum amount of coding.
 
-### The challenge of developing rich AJAX applications
+Agile Toolkit is entirely driven by PHP language (except for templates) - no need to learn anything new. It has a very low entry barrier for beginners and is a great way to learn most popular web language - PHP.
 
-The increasing importance of desktop-like AJAX interfaces is a game-changer for PHP application developers:
+If you use Agile Toolkit for your project, it will also enforce consistent and readable code, making support and long-term projects highly cost-efficient. When you introduce a new experienced developer to your existing project, he will be able to track down and understand structure of your project almost instantly and perform critical changes without danger of breaking the project.
 
-* Rich interfaces require complex HTML5 and CSS3
-* We need non-trivial JavaScript in the client to enforce business rules, handle events and bind data structures to the interface
-* We need to move data between the database, our PHP server-side objects and our JavaScript in the client
-* For security, we need to double-check client-side business rules on the server
-* And we have to tie all this together with AJAX calls and responses.
+![What is Agile Toolkit](what-is/what-is.png)
 
-<?Image?>dia-web-technologies.png The Web Technology Challenge<?/?>
+Agile Toolkit comes integrated with www.agiletoolkit.org to further help developers with basic tasks such as getting help, finding and installing add-ons, sharing code and publishing your project to your own free web hosting.
 
+Agile Toolkit framework is dual licensed - AGPL license permits use in personal and open-source projects. Additionally you receive free hosting for your project with no time limitation.
 
-### The limitations of mainstream solutions
+For developers looking to develop closed-source projects and deploy those to their own private servers a paid subscription will be required for the duration of development comparable. This is comparable to the private repository service offered by github.com.
 
-The PHP community offers a wide choice of well-engineered MVC frameworks, but even the best can only offer a partial solution to the many challenges of developing rich interfaces for data-centric applications.
+## Comparing Agile Toolkit
 
-With some frameworks you create your AJAX data management system though code generation or big, monolithic libraries. This can offer a rapid solution for straightforward requirements. But your application design is constrained by the features built into the generator or library, and you can end up adapting more complex projects to the framework rather than the framework to the project.
+### to Xcode / Cocoa for iOS from Apple
 
-For more complex requirements your main option is a multi-framework development stack. Typically this involves a PHP MVC framework on the server-side, a JavaScript user interface framework such as JQuery UI on the client-side, and perhaps a CSS framework such as Bootstrap to ease the styling headache. But now you're working with two or three complex and overlapping frameworks in different languages, and you're still having to figure out your own way to tie them together with AJAX. It's a challenge to keep things [DRY](http://en.wikipedia.org/wiki/Don't_repeat_yourself) and avoid duplicating effort on the client and the server. The learning curve is steep. And the resulting code can be hard to test and tricky to change as requirements evolve. 
+Agile Toolkit offers PHP developers a similar experience to Xcode by Apple for developing of iOS application.
 
-### The need for a fresh approach
+* Both are free to download and use
+* Both require to subscribe for commercial application deployment
+* Both offer sophisticated framework (Cocoa and Agile Toolkit PHP)
+* Both focus on providing you, developer, with great tools to help you develop
+* Both offer you full-stack solution
+* Both allow you to use most of the advanced environment technologies with simple interface.
 
-Neither of these solutions met the needs of our busy web development house. So we set out to build a simpler, faster and more reliable approach to developing rich web applications.
+### to other Open-Source web frameworks
 
-Though our experience of over 100 commercial projects Agile Toolkit has evolved into a mature, production-ready development tool.
+Competing PHP framework offer you partial solution, require much higher knowledge, require you to write more code, offer no user interface, does not encourage you to write Open-Source projects, does not offer free app hosting, offer no community portal yet very expressive commercial support and are inherently designed to be "complex" or "slow" so that the company behind the framework could sell more commercial support / training or enterprise server solutions.
 
-## What Unique Benefits Does Agile Toolkit Deliver?
+## Why learn Agile Toolkit?
 
-In the crowded world of PHP frameworks any new project should justify its existence by delivering distinctive and compelling benefits.
+Agile Toolkit can be taught and learned by developers with virtually no experience. Agile Toolkit does not require prior experience or deep understanding. Instead it offers the best academical and commercial value for your time investment.
 
-### Bringing the ease of desktop development to the web
+### for students
 
-Agile Toolkit borrows proven principles from GUI frameworks such as Cocoa, QT and .Net to bring the convenience and power of desktop development to PHP developers building AJAX applications.
+PHP Language has a great support for object-oriented development. Universities traditionally use Java or Smalltalk to demonstrate Object Oriented approach, however a popular software in PHP is ofter messy and is based on poor development practices.
 
-* The framework provides a consistent, professional look and feel for your application, based on standard UI components such as buttons, menus, forms and fields
-* The look and feel is easy to skin or customize
-* Actual implementation of a UI component (HTML template, JavaScript widgets, events and CSS) is abstracted and knowledge of the underlying nuts and bolts is not necessary to build your application
-* In general everything is done in PHP, from Models and advanced data queries to View layout, UI logic and event binding
-* Components are modular and independent &ndash; for example placing multiple CRUD components on the same page or embedding them inside your custom component is simple and intuitive
-* UI logic is cleanly separated from business logic by design
-* And your data structures move seamlessly between your data store and your AJAX interface.
+Agile Toolkit teaches you to develop an efficient, stable and clean code. It will teach you to be a better architect and structure your application better without distracting you to a less-relevant technologies.
 
-<?Image?>dia-simplifying-development.png Simplifying Rich Application Development<?/?>
+There is no cost to learn Agile Toolkit and you can publish your project to demonstrate it to your teacher. You also do not need to know how to set up your web application - Agile Toolkit does it all for you.
 
-### How is Agile Toolkit different?
+As you graduate, you can use Agile Toolkit for any web project. PHP is the most popular web language and is very widely supported.
 
-We call our solution a Toolkit rather than a framework because the focus is on rapid development with reusable interface and business components. And we call it Agile because the components are designed to adapt easily and reliably as project requirements evolve.
+### for course attendees
 
-Compared to conventional PHP MVC frameworks, you'll be working with:
+Agile Toolkit courses are available in some countries. Usually those are paid courses but you receive a digital certificate as you complete the course.
 
-* **A fresh approach to Views**: building a rich user experience by snapping together flexible, event-aware View components using only PHP on the server ([see more...](/TODO)) 
-* **A fresh approach to Models**: building your business logic in Models that bind directly to your View components and adapt robustly as requirements evolve ([see more...](/TODO)) 
-* **A fresh approach to Addons**: plugging in additional functionality from an ecosystem of Addons that take full advantage of the AJAX, event handling and styling features of the Toolkit Core ([see more...](/TODO)).
+### for commercial companies
 
-Agile Toolkit offers a comprehensive approach to rich application development, so there's only one way to do things &ndash; the right way. The architectural decisions and client-side plumbing are handled for you, enabling you to focus on the functionality of your application from the get-go.
+Most of the Web Frameworks are born from a academical projects or as certain developer migrates from one language to another. The initial structure of those frameworks are simple yet offers you almost NO help. As frameworks mature, they become overcomplicated introduce segmentation and resistance to further refactoring.
 
-### The payoff
+Agile Toolkit has undergone a 3 (THREE) major refactoring stages. Each stage was heavily used in hundreds of agile commercial projects with all sorts of requirements. The 4.0 of Agile Toolkit have been released in 2008 and have significantly matured without loosing key benefits.
 
-So what is the payoff for you, the developer? Quite simply, AJAX data applications that are:
+If you develop your web software (or part of it) using Agile Toolkit - you'll have the most efficient development cycle you have ever experienced. The time you save on project support, component development and bug fixes significantly outweigh your commercial licensing and training costs.
 
-* Easier to build
-* Easier to test, and
-* Easier to change.
+All of the Agile Toolkit codebase is copyright by Agile Toolkit Limited - UK Based commercial company dedicated to growth and improvement of the framework. Agile Toolkit is our bread and butter and is where we will continue to innovate and improve.
 
-### Example: a full-featured CRUD UI in 2 lines of code
+### for non-developers
+
+If you are an administrator or only briefly need a framework to build a quick project - Agile Toolkit is ideal for you. From all the frameworks - Agile Toolkit gives you the most with minimum learning, which means your application will be done in no-time.
+
+### for open-source
+
+If you plan to develop a web project - you should consider AGPL license - which is GPL equivalent for web apps and is compatible with MIT-based components.
+
+Agile Toolkit will give you the quickest result and can be easily adopted by any Agile Toolkit developer out there to make contributing to your application super-easy.
+
+## Example: a full-featured CRUD UI in 2 lines of code
 
 To demonstrate the agility of the Agile Toolkit approach, here's how you'd build a fully AJAXed [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) application.  Let's start with the vanilla built-in CRUD component:
 
