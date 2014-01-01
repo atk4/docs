@@ -1,6 +1,4 @@
-# Overview > Design Goals
-
-## A Fresh Approach To Framework Design
+# Design Goals
 
 Agile Toolkit does not inherit patterns from other web frameworks. Instead it takes a fresh look at Web Development and applies some principles from desktop frameworks.
 
