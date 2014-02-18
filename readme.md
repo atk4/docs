@@ -75,7 +75,7 @@ Object Relational Manager (ORM)
  
 User Interface
 ----
- * [Introduction to Views](user-interface/intro.md "Introduction to Views")
+ * [Introduction to User Interface](user-interface/intro.md "Introduction to Views")
  * [Template Engine (SMLite)](user-interface/template-engine.md "Template Engine (SMLite)")
  * Object Tree and Rendering
  * [Lister, Menu and Grid](user-interface/lister-menu-and-grid.md "Lister, Menu and Grid")

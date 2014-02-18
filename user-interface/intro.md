@@ -1,3 +1,40 @@
+<!-- draft -->
+
+Agile User Interface
+====
+Agile Toolkit is an Object-Oriented PHP UI Framework. That means:
+
+ - Object Oriented: You operate with Objects capable of visualizing themselves.
+ - PHP: You operate in the most popular web language on the planet.
+ - UI: Agile Toolkit takes care of all aspects of user interface.
+ - Framework: There are strict rules and well-organized foundation.
+ - Toolkit: You have a collection of tools you can use right away.
+ - Agile: Everything is super flexible and customizable.
+ 
+If you are new to Agile Toolkit please refer to section  
+ 
+ 
+
+abstraction of HTML/CSS User Interface. That means that PHP code you write will look great.
+
+
+
+
+as you create PHP objects, they render themselves into a web application. 
+
+
+Agile Toolkit offers you a fully-working out-of-the-box HTML/CSS User Interface. You can control the 
+
+
+
+
+
+From all the PHP frameworks and toolkits who tried to create User Interface you will find Agile Toolkit to contain the perfect mix between "template customizability" and "content awareness". In Agile Toolkit you have a full control over every line of HTML produced. At the same time Agile Toolkit offer AJAX and JavaScript integration on object-level allowing you to reload objects on the page, assign JavaScript and AJAX events.
+
+
+
+
+
 Create your own View in 3 steps:
 ---
 
