@@ -99,7 +99,8 @@ Addon can have these files inside its lib directory:
 * <b>Initiator.php</b> - class Initiator describes all actions what should be performed each time addon is called.
 
 
-Addon filesystem structure
+
+###Addon filesystem structure
 
           {your addon}↴
                       ↦ lib ———↴
