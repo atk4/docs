@@ -58,7 +58,11 @@ This class is used for initiation of your addon on every application call and is
 
 
 ####Controller_addon::$api_var
-This var is used to store initiator object in $this->api->addons array. In our case this initiator will be accessible like this $this->api->addons[‘rvadym_blog’]. It is resposibility of addon creator to make accessible other part of addon from Initiator.
+This var is used to store initiator object in $this->api->addons array. In our case this initiator will be accessible like this 
+
+    $this->api->addons[‘atk4_blog’]. 
+
+It is resposibility of addon creator to make accessible other part of addon from Initiator.
 
 ####Controller_addon::$addon_name
 addon name to be shown in admin part if sandbox is installed
