@@ -3,7 +3,7 @@
 
 ## General information
 
-* ATK4 Addon is a Composer package. To become a composer package it needs to contain the file called <a href = "https://getcomposer.org/doc/01-basic-usage.md#composer-json-project-setup">composer.json</a> located in root directory of addon and can be registered on <a href = "https://packagist.org/">packagist.org</a>. 
+* ATK4 Addon is a Composer package. To become a composer package it needs to contain the file called <a href = "https://getcomposer.org/doc/01-basic-usage.md#composer-json-project-setup" target="_blank">composer.json</a> located in root directory of addon and can be registered on <a href = "https://packagist.org/" target="_blank">packagist.org</a>. 
 * ATK4 addon doesn’t use composer autoload because ATK4 has its own autoload pathfinder. 
 * To enable your addon to be installed from sandbox UI it needs to be registered in AgileToolkit Market. For manual installation you need to add required line to composer.json file of your project.
 
@@ -100,7 +100,7 @@ Addon can have these files inside its lib directory:
 
 
 
-###Addon filesystem structure
+### Addon filesystem structure
 
           {your addon}↴
                       ↦ lib ———↴
