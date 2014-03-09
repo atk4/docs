@@ -3,6 +3,7 @@
 
 Agile Toolkit can be taught and learned by developers with virtually no experience. Agile Toolkit does not require prior experience or deep understanding. Instead it offers the best academical and commercial value for your time investment.
 
+
 ### for students
 
 PHP Language has a great support for object-oriented development. Universities traditionally use Java or Smalltalk to demonstrate Object Oriented approach, however a popular software in PHP is ofter messy and is based on poor development practices.
