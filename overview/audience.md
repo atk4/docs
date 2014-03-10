@@ -1,4 +1,42 @@
-## Example: a full-featured CRUD UI in 2 lines of code
+
+Agile Toolkit can be taught and learned by developers with virtually no web development experience. It offers the best academical and commercial learning value for your time.
+
+### for students
+
+PHP Language is regarded as as one of the easiest language to learn. Unfortunately you can't just learn PHP without learning a lot about HTML/CSS and web servers before.
+
+Agile Toolkit lets you focus on your code. It teaches you to develop an efficient, stable and clean code. You will become a better code architect and be able to structure your application better without distracting you to a less-relevant technologies.
+
+Only with Agile Toolkit you will be able to produce great-looking, visual Web application just in time for your course project deadline.
+
+### for professionals
+
+If you are a full-time PHP developer, Agile Toolkit could be that "cool new technology" you can learn in your spare time. Just download, pick few examples and try putting a simple app together. Once done - share with others.
+
+Agile Toolkit has all the necessary tools to produce a fully-featured web application. Even if something is missing, there are a lot of 3rd party code you could use.
+
+### for companies and enterprise
+
+Enterprise does not run PHP. The business applications are written in Java, Scala, C# or sometimes Python. But none of those languages can offer a great Web Interface when it comes to web frameworks.
+
+Agile Toolkit can consume your RESTful APIs of your middleware and put a great user interface on top of your corporate software stack. It also supports local  caching, clustering and is super-easy to deploy and maintain.
+
+All of the Agile Toolkit codebase is copyright by Agile Toolkit Limited - UK Based commercial company dedicated to growth and improvement of the framework. 
+
+### for non-developers
+
+If you are an administrator or a designer who only briefly need a framework to build a quick project - Agile Toolkit is ideal for you. From all the frameworks - Agile Toolkit gives you the most with minimum learning.
+
+Agile Toolkit is great for building that quick and compact user interface for whatever project you have in mind.
+
+### for open-source projects
+
+If you plan to begin a new personal project - why now make it open-source? You can use either MIT or AGPL license (or both) to make it available and free to anyone.
+
+We love open-source software and will give you assistance with your project.
+
+
+## Crash-course in Agile Toolkit TODO: MOVE TO TUTORIAL
 
 To demonstrate the agility of the Agile Toolkit approach, here's how you'd build a fully AJAXed [CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) application.  Let's start with the vanilla built-in CRUD component:
 
@@ -10,7 +48,7 @@ That's it &ndash; our page is now displaying an attractive and functional CRUD i
 In Agile Toolkit CRUD is just another component, with many powerful and flexible features built-in &ndash; for example:
 
     $crud->addPaginator(5);
-    $crud->addQuickSearch(array('name', 'department'));
+    $crud->addQuickSearch( [ 'name', 'department' ] );
 
 Components are easy to extend and customize. CRUD is a composite View relying on Grid, Form and Button Views and we can interact with those subcomponents directly:
 
