@@ -1,5 +1,3 @@
-# What is Agile Toolkit?
-
 Agile Toolkit is a PHP framework for development of Web Application. It is inspired by Mobile and Desktop frameworks, but the concept is used for building Native HTML applications. Agile Toolkit has a strong philosophy and is driven by the key 5 principles: Simple, Advanced, Composite, Inherited and Agile.
 
 In terms of features - Using Agile Toolkit will offer you a consistent HTML/CSS-based interface out of the box, objects for UI widgets, Data Modeling tools, support for relational and NoSQL data storages with minimum amount of coding.
@@ -8,7 +6,7 @@ Agile Toolkit is entirely driven by PHP language (except for templates) - no nee
 
 If you use Agile Toolkit for your project, it will also enforce consistent and readable code, making support and long-term projects highly cost-efficient. When you introduce a new experienced developer to your existing project, he will be able to track down and understand structure of your project almost instantly and perform critical changes without danger of breaking the project.
 
-![What is Agile Toolkit](what-is/what-is.png)
+![What is Agile Toolkit](overview/what-is/what-is.png)
 
 Agile Toolkit comes integrated with www.agiletoolkit.org to further help developers with basic tasks such as getting help, finding and installing add-ons, sharing code and publishing your project to your own free web hosting.
 

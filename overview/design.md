@@ -14,9 +14,15 @@ The key principles to Agile Toolkit are:
 
 ## Make Things Simpler
 
+Step 1: Download and [Install](../install.md) Agile Toolkit.
+
+Step 2: In page/index.php add:
+
 ![Make Simpler Principle](design/simple-principle.png)
 
-Agile Toolkit is really simple. It's more simple then using NO frameworks at all. Our focus is to make complex processes simple and accessible. We also focus on etiquette of the code, to make your source code look concise and readable.
+Step 3: Click "Preview / Publish" to install your Web App into the cloud.
+
+Agile Toolkit makes web development simple. It's more simple then using NO frameworks at all. Our focus is to make complex processes simple and accessible. We also focus on etiquette of the code, to make your source code look concise and readable.
 
 **Agile Toolkit will always offer you a simple way to get things done.**
 

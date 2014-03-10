@@ -1,8 +1,9 @@
 
-## Why learn Agile Toolkit?
-
 Agile Toolkit can be taught and learned by developers with virtually no experience. Agile Toolkit does not require prior experience or deep understanding. Instead it offers the best academical and commercial value for your time investment.
 
+### for professionals
+
+Agile Toolkit was developed to be cost-efficient for medium-sized bespoke web project. Refined throughout hundreds of commercial projects, Agile Toolkit matured to be the most efficient tool in your professional toolbox.
 
 ### for students
 
