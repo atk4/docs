@@ -39,7 +39,7 @@ Roberts Muhametsins, Krisjanis Linkevics, Janis Volbergs, Aija Luuse, Chernousov
 </td>
 <td class="atk-text-nowrap">Professional Feedback</td>
 <td class="atk-text-nowrap"><a href="{page}contact{/}">Send your feedback</a></td></tr>
-<tr><td class="atk-jackscrew atk-text-dimmed">Gita Malinovska
+<tr><td class="atk-jackscrew atk-text-dimmed">Gita Malinovska, Katerina Radvanskaya
 </td>
 <td class="atk-text-nowrap">Special Thanks</td>
 <td class="atk-text-nowrap"> </td></tr></tbody>
