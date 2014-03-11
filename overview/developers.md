@@ -35,10 +35,13 @@
 <td class="atk-text-dimmed atk-text-nowrap">Community Support</td>
 <td class="atk-text-nowrap"><a href="http://stackoverflow.com/tags/atk4/topusers">StackOverflow Top</a></td></tr>
 <tr><td class="atk-jackscrew atk-text-dimmed">
-Roberts Muhametsins, Krisjanis Linkevics, Janis Volbergs, Aija Luuse, Chernousov Vjacheslav, Kirill Chernishov, Maxim Usotjev, Igor Karablin, Vladimir Mamzikov, Alexander Dudchenko, Svetlozar Kondakov, Maxim Antonuk, Gita Malinovska, Prashanth Papagiri, Fernando Javier Martin, Trevor North
+Roberts Muhametsins, Krisjanis Linkevics, Janis Volbergs, Aija Luuse, Chernousov Vjacheslav, Kirill Chernishov, Maxim Usotjev, Igor Karablin, Vladimir Mamzikov, Alexander Dudchenko, Svetlozar Kondakov, Maxim Antonuk, Prashanth Papagiri, Fernando Javier Martin, Trevor North
 </td>
 <td class="atk-text-nowrap">Professional Feedback</td>
 <td class="atk-text-nowrap"><a href="{page}contact{/}">Send your feedback</a></td></tr>
-</tbody>
+<tr><td class="atk-jackscrew atk-text-dimmed">Gita Malinovska
+</td>
+<td class="atk-text-nowrap">Special Thanks</td>
+<td class="atk-text-nowrap"> </td></tr></tbody>
 </table>
 </div>
