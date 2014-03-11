@@ -19,21 +19,26 @@
 <a href="javascript:void(0)"><span class="icon-down-circled-1"></span>Download</a><a href="javascript:void(0)"><span class="icon-trash"></span>Delete</a>
 </div></div></div></div></div></div>
 
-## Other Contributors
+### Other Contributors
 
 <div class="atk-table atk-table-outline"><table><thead><tr>
 <th>Names</th>
 <th>Contribution</th>
 <th>Link</th></tr></thead><tbody>
-<tr><td class="atk-jackscrew">Vadym Radvansky, Oleksii Ostapets, Konstantin Kolodnitsky</td>
-<td class="atk-text-dimmed atk-text-nowrap">Plug-in Developers</td>
-<td class="atk-text-nowrap"><a href="javascript:void(0)">Share your plug-in</a></td></tr>
-<tr>
-<td class="atk-jackscrew atk-text-dimmed">
+<tr><td class="atk-jackscrew">Jancha, DarkSide, Vadym Radvansky, Oleksii Ostapets</td>
+<td class="atk-text-dimmed atk-text-nowrap">Code Contributors</td>
+<td class="atk-text-nowrap"><a href="{page}doc/contrib{/}">How to Contribute</a></td></tr>
+<tr><td class="atk-jackscrew">Geoff Caplan, J. K., Konstantin Kolodnitsky</td>
+<td class="atk-text-dimmed atk-text-nowrap">Documentation</td>
+<td class="atk-text-nowrap"><a href="https://github.com/atk4/docs/blob/master/contribute.md">Contributor Guide</a></td></tr>
+<tr><td class="atk-jackscrew">Flipper, Trevor North, mcanedo, Open Technologist, The Elter, mr_eclair, Qambar Raza</td>
+<td class="atk-text-dimmed atk-text-nowrap">Community Support</td>
+<td class="atk-text-nowrap"><a href="http://stackoverflow.com/tags/atk4/topusers">StackOverflow Top</a></td></tr>
+<tr><td class="atk-jackscrew atk-text-dimmed">
 Roberts Muhametsins, Krisjanis Linkevics, Janis Volbergs, Aija Luuse, Chernousov Vjacheslav, Kirill Chernishov, Maxim Usotjev, Igor Karablin, Vladimir Mamzikov, Alexander Dudchenko, Svetlozar Kondakov, Maxim Antonuk, Gita Malinovska, Prashanth Papagiri, Fernando Javier Martin, Trevor North
 </td>
 <td class="atk-text-nowrap">Professional Feedback</td>
-<td class="atk-text-nowrap"><a href="javascript:void(0)">Join through feedback</a></td></tr>
+<td class="atk-text-nowrap"><a href="{page}contact{/}">Send your feedback</a></td></tr>
 </tbody>
 </table>
 </div>
