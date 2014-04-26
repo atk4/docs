@@ -1,9 +1,12 @@
 [Home](../readme.md "Home")
 
 
-![Data Model](orm/orm-integration.jpg "Data Model")
+In Agile Toolkit Views can interact with the Data Layer through Models. Model is a class implementing [Active Record](http://en.wikipedia.org/wiki/Active_record_pattern) and [ORM](http://en.wikipedia.org/wiki/Object-relational_mapping) as well as holding meta-data for the objects. 
 
-In Agile Toolkit Views can interact with the Data Layer through Models. Model is a class implementing Active Record and ORM as well as holding meta-data for the objects. 
+One Model instance 
+
+
+![Data Model](orm/orm-integration.jpg "Data Model")
 
 You must understand that there are two types of models - Relational and Non-Relational (or NoSQL) and that Model_Table (relational) extends the other. To most of the User Interface both classes are compatible, however both model implementation use a very different way to interact with data.
 

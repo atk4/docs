@@ -6,6 +6,8 @@
 
 In our software data is arranged into logical tables or collections. It's sensible to associate data with a set of relevant actions. PHP objects is are an ideal container for both the data and the set of methods which can be applied on the data.
 
+![image](model.png)
+
 Normally a single model object represents a single row of data, however this approach is impractical. Agile Toolkit uses a different approach for the models, where the model can load any row of data or even perform operations on all data set. If you have prior experience with other data frameworks such as Doctrine, Active Record or some other ORM, you should pay attention to how "Model" works in Agile Toolkit.
 
 ### The Dataset
