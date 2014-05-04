@@ -1,0 +1,4 @@
+site_name: Agile Toolkit Documentation
+pages:
+    - [index.md, Home]
+    - [overview.md, "Overview"]
