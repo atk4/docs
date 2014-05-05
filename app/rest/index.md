@@ -45,7 +45,7 @@ Next you need to define your end-point. By default they would be inside "endpoin
 The file "index.php" is pretty much a standard one, although I recommend adding some headers:
 
     include'../vendor/atk4/atk4/loader.php';
-    include 'lib/Api2.php';
+    include 'lib/Api.php';
 
     $api = new Api('apisrv');
     $api->main();
