@@ -4,8 +4,7 @@ Agile Toolkit's RESTful data controller allows you to easily access the RESTful 
 
 ## Installation
 
-Find and install "[RESTful Data Controller](http://agiletoolkit.org/market/atk4/restful)" add-on on Agile Toolkit Market.
-
+Find and install "educoder/pest" through composer.json.
 ## Use
 
 Create a new model which would represent remote resource. As an example, I'll use [CopperEgg's JSON RESTFul API](http://copperegg.wpengine.netdna-cdn.com/wp-content/uploads/2012/09/CopperEgg-API-Cheat-Sheet.pdf).
