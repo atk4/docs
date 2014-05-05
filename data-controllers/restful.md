@@ -9,7 +9,7 @@ Find and install "educoder/pest" through composer.json.
 
 Create a new model which would represent remote resource. As an example, I'll use [CopperEgg's JSON RESTFul API](http://copperegg.wpengine.netdna-cdn.com/wp-content/uploads/2012/09/CopperEgg-API-Cheat-Sheet.pdf).
 
-    class Model_Probe extend Model {
+    class Model_Probe extends Model {
     
         public $collection_uri = 'revealuptime/probes.json';
         public $element_uri    = 'revealuptime/probes/{$id}.json';
