@@ -272,3 +272,6 @@ Endpoint does not necessarily need to have a model. If you don't specify `$model
             return 'OK';
         }
     }
+    
+    
+### TODO: allow_add can also be array. Document!!.
