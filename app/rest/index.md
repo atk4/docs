@@ -275,3 +275,6 @@ Endpoint does not necessarily need to have a model. If you don't specify `$model
     
     
 ### TODO: allow_add can also be array. Document!!.
+
+### TODO: explain that both JSON and FORM data is supported.
+
