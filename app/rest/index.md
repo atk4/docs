@@ -23,7 +23,7 @@ Start by populating
             $this->dbConnect();
 
             $this->add('Controller_PatternRouter')
-                ->link('v1/test',array('id','method','arg1','arg2'))
+                ->link('v1/book',array('id','method','arg1','arg2'))
                 ->route();
         }
     }
@@ -58,7 +58,7 @@ And in the config file I would simply include the main configuration file:
 
 ### Testing
 
-Open `http://localhost:8888/api/v1/test` and it should show you list produced by your book model.
+Open `http://localhost:8888/api/v1/book` and it should show you list produced by your book model.
 
 ## Enabling or Disabling actions
 
@@ -265,7 +265,7 @@ Because each API request introduces latency to your user application, sometimes 
 
 Endpoint does not necessarily need to have a model. If you don't specify `$model_class` you can define your own methods for getting and updating data.
 
-    class endpoint_v1_test extends Endpoint_REST
+    class endpoint_v1_book extends Endpoint_REST
     {
         function get()
         {
