@@ -100,17 +100,17 @@ Alternatively, you can just specify name of the template, and the view will be a
 
     $form->addSubmit('Save');
 
-Be sure to always add {$Content} tag to your form template. It will be used by all the fields which did not have their spot marked with a dedicated tag. Also - even though you are using layout, always specify a proper template, it will affect the appearance of the button and the fields which lack dedicated tag.
+Be sure to always add `{$Content}` tag to your form template. It will be used by all the fields which did not have their spot marked with a dedicated tag. Also - even though you are using layout, always specify a proper template, it will affect the appearance of the button and the fields which lack dedicated tag.
 
 If you are using default form template, it relies on `<div class="atk-cells-group">` surrounding fields, otherwise fields will not be aligned. 
 
 ### Use with Models
 
-Form in Agile Toolkit automatically populates fields from the model, when you call setModel(). This means - you might not have a chance to arrange those fields into the appropriate views.
+Form in Agile Toolkit automatically populates fields from the model, when you call `setModel()`. This means - you might not have a chance to arrange those fields into the appropriate views.
 
 There are two ways around it.
 
-First - you could use `setLayout()` before calling setModel(), then new fields will automatically go into the layout where necessary.
+First - you could use `setLayout()` before calling `setModel()`, then new fields will automatically go into the layout where necessary.
 
 The other option is:
 
