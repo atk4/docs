@@ -104,3 +104,18 @@ Be sure to always add {$Content} tag to your form template. It will be used by a
 
 If you are using default form template, it relies on `<div class="atk-cells-group">` surrounding fields, otherwise fields will not be aligned. 
 
+### Use with Models
+
+Form in Agile Toolkit automatically populates fields from the model, when you call setModel(). This means - you might not have a chance to arrange those fields into the appropriate views.
+
+There are two ways around it.
+
+First - you could use `setLayout()` before calling setModel(), then new fields will automatically go into the layout where necessary.
+
+The other option is:
+
+    $form->setModel('Book',false);  // prevents from any fields being imported
+    
+    $v = $form->add('MyView');
+    $v->addField('title');          // will use the field from the model.
+    
