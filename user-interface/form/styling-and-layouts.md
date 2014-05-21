@@ -14,8 +14,8 @@ A form works and operates like any other View element. It has a template and you
 
 Next example will create 2 columns inside your form and then insert fields into those columns. It also uses "form/stacked" template so that labels appear above the fields.
 
-    $form = $this->add('Form',null,null,['form/stacked']);
-    $c=$form->add('Columns');
+    $form = $this->add('Form', null, null, ['form/stacked']);
+    $c = $form->add('Columns');
     $c1 = $c->addColumn(6);
     $c1->addField('name');
     $c1->addField('surname');
@@ -31,7 +31,7 @@ If you are using default form template, it relies on `<div class="atk-cells-grou
 
 You don't have to add all your fields inside views, but you can rather use fields as necessary. The next form uses columns only to arrange Birth Place and Birth Year side-by-side. The rest of fields use a normal flow. It also uses form/minimal template to hide labels and rely on placeholders instead.
 
-    $form = $this->add('Form',null,null,['form/minimal']);
+    $form = $this->add('Form', null, null, ['form/minimal']);
     $form->addField('name');
     $form->addField('surname');
 
@@ -50,7 +50,7 @@ To gain the full power of the views inside form, you can use your form with cust
 
 As you already know, there are few form templates you can use out of the box. You can set the template as 4th argument when you add form:
 
-    $form = $this->add('Form',null,null,['form/minimal']);
+    $form = $this->add('Form', null, null, ['form/minimal']);
     
 An alternatives to default (`form`) template are: `form/minimal`, `form/stacked` and `form/horizontal` and `form/empty`.
 
@@ -68,9 +68,9 @@ Let me go back to a custom template scenario I have mentioned earlier. Suppose y
     
 When you add a view with this template inside a form, the fields with the matching names will be positioned exactly where the tags are. (Note: I've added atk-span-2 to fields because fields have 100% width by default)
 
-    $form = $this->add('Form',null,null,['form/empty']);
+    $form = $this->add('Form', null, null, ['form/empty']);
 
-    $greeting_card = $form->add('View',null,null,['view/greeting_card']);
+    $greeting_card = $form->add('View', null, null, ['view/greeting_card']);
     $greeting_card->addField('name')->addClass('atk-span-2');
     $greeting_card->addField('surname')->addCLass('atk-span-2');
 
@@ -83,7 +83,7 @@ Using this approach you can add several Views inside the form and assign differe
 
     $form = $this->add('Form',null,null,['form/empty']);
 
-    $greeting_card = $form->add('View',null,null,['view/greeting_card']);
+    $greeting_card = $form->add('View', null, null, ['view/greeting_card']);
     $form->setLayout($greeting_card);
     $form->addField('name')->addClass('atk-span-2');
     $form->addField('surname')->addClass('atk-span-2');
@@ -92,7 +92,7 @@ Using this approach you can add several Views inside the form and assign differe
 
 Alternatively, you can just specify name of the template, and the view will be added automatically.
 
-    $form = $this->add('Form',null,null,['form/empty']);
+    $form = $this->add('Form', null, null, ['form/empty']);
 
     $form->setLayout('view/greeting_card');
     $form->addField('name')->addClass('atk-span-2');
