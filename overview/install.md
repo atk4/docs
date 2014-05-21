@@ -18,9 +18,7 @@ Find and execute file "**start.sh**" (or start.bat for Windows). This will attem
 
 ![image](install-screen.png)
 
-From here on you should just follow on-screen instructions.
-
-If it didn't work for you, then you'll need to continue with the manual installation below.
+From here on you should just follow on-screen instructions. If it didn't work for you, then you'll need to continue with the manual installation below.
 
 ### Security Warning
 
