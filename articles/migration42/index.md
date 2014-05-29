@@ -1,9 +1,41 @@
-# Current Migration Steps to 4.3
+# Upgrading to 4.3 (from 4.2)
 
-The following are the steps which are potentially necessary for the migration. We would like to reduce and make migration simpler, but in reality that's what we have.
+Agile Toolkit 4.3 is a major sequential upgrade release. That means:
 
-If any steps over here can be omitted - they please create issue in bug tracker and add respective note.
+ - A lot of things changed under the hood
+ - Projects are generally compatible, but require tweaks
+ - Maximum compatibility with 4.2
+ - Not compatible with 4.1
 
+The 4.3 introduces many new features and changes the way you develop your project, but it will also work as a drop-in replacement for your `atk4` folder.
+
+## Compatibility Controller
+
+I advise you to review your code and refactor it for 4.3. If you want to do as little change as possible, then you will need to use Compatibility Controller. Open your Application class and add:
+
+    function _beforeInit(){
+        $this->add('Controller_Compat42');
+        parent::_beforeInit();
+    }
+    
+## Areas of major change
+
+### CSS framework
+Agile Toolkit 4.3 comes with a brand new CSS framework. While the framework is not compatible at all with the previous CSS:
+
+ - If you use standard components and PHP code primarily - you should be OK.
+ - If you use a complete set of templates - you might be also OK.
+ 
+The new CSS framework is much better documented, however we have dropped support for IE8 and older browsers.
+ 
+### PathFinder
+Previously you would install agile toolkit in "my_folder", and direct browser inside the same folder. To comply with security standards of web applications we now require you to create "public" folder and point your browsers in there. This way majority of your project will be located outside of web-root.
+
+ - If you are using Controller_Compat42, `pathfinder` will allow your project to operate without "public" folder.
+ 
+
+ 
+ 
 ## Different Configurations
 Agile Toolkit 4.3 can operate in different ways. By default your project folder would contain several "interfaces" - admin, frontend, api etc. Previously atk4 was designed to work with one interface at a time.  
 
