@@ -104,6 +104,10 @@ Be sure to always add `{$Content}` tag to your form template. It will be used by
 
 If you are using default form template, it relies on `<div class="atk-cells-group">` surrounding fields, otherwise fields will not be aligned. 
 
+### Notes
+
+Even though you add Field object into a sub-object of the form, you can still address the field with $form->getElement('field').
+
 ### Use with Models
 
 Form in Agile Toolkit automatically populates fields from the model, when you call `setModel()`. This means - you might not have a chance to arrange those fields into the appropriate views.
